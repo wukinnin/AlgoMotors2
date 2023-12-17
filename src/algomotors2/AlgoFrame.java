@@ -27,7 +27,9 @@ public class AlgoFrame extends javax.swing.JFrame {
         initComponents();
         int carNum = 6; // Assuming there are 6 car types
         rentedCarCustomers = new String[carNum];
-        carAvailability = new CarAvailability(carNum); 
+        carAvailability = new CarAvailability(carNum);
+        // Update rateNumField based on the initial selected car
+        updateRateNumField();
     }
 
     private CarAvailability carAvailability;
@@ -59,16 +61,18 @@ public class AlgoFrame extends javax.swing.JFrame {
         nameRentField = new javax.swing.JTextField();
         modelRentLabel = new javax.swing.JLabel();
         carComboBox = new javax.swing.JComboBox<>();
-        rateLabel = new javax.swing.JLabel();
-        rentTotalLabel = new javax.swing.JLabel();
         rentCarButton = new javax.swing.JButton();
         amountLabel = new javax.swing.JLabel();
         amountField = new javax.swing.JTextField();
-        changeLabel = new javax.swing.JLabel();
         daysRentLabel = new javax.swing.JLabel();
         daysRentField = new javax.swing.JTextField();
-        rentTotalNumLabel = new javax.swing.JLabel();
         rateHeaderLabel = new javax.swing.JLabel();
+        rateNumField = new javax.swing.JTextField();
+        rentTotalField = new javax.swing.JTextField();
+        changeNumField = new javax.swing.JTextField();
+        rentTotalButton = new javax.swing.JButton();
+        changeNumButton = new javax.swing.JButton();
+        rentTotalLabel = new javax.swing.JLabel();
         changeNumLabel = new javax.swing.JLabel();
         returnACarPanel = new javax.swing.JPanel();
         returnModelLabel = new javax.swing.JLabel();
@@ -76,7 +80,6 @@ public class AlgoFrame extends javax.swing.JFrame {
         nameReturnLabel = new javax.swing.JLabel();
         returnNameField = new javax.swing.JTextField();
         returnButton = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
         titleHeader = new javax.swing.JLabel();
 
         modelRentLabel1.setText("Model");
@@ -90,11 +93,11 @@ public class AlgoFrame extends javax.swing.JFrame {
         viewNestedViosPanel.setLayout(viewNestedViosPanelLayout);
         viewNestedViosPanelLayout.setHorizontalGroup(
             viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 486, Short.MAX_VALUE)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
         viewNestedViosPanelLayout.setVerticalGroup(
             viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 357, Short.MAX_VALUE)
         );
 
         viewNestedCarTab.addTab("Vios", viewNestedViosPanel);
@@ -103,11 +106,11 @@ public class AlgoFrame extends javax.swing.JFrame {
         viewNestedAvanzaPanel.setLayout(viewNestedAvanzaPanelLayout);
         viewNestedAvanzaPanelLayout.setHorizontalGroup(
             viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 486, Short.MAX_VALUE)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
         viewNestedAvanzaPanelLayout.setVerticalGroup(
             viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 357, Short.MAX_VALUE)
         );
 
         viewNestedCarTab.addTab("Avanza", viewNestedAvanzaPanel);
@@ -116,11 +119,11 @@ public class AlgoFrame extends javax.swing.JFrame {
         viewNestedCorollaPanel.setLayout(viewNestedCorollaPanelLayout);
         viewNestedCorollaPanelLayout.setHorizontalGroup(
             viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 486, Short.MAX_VALUE)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
         viewNestedCorollaPanelLayout.setVerticalGroup(
             viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 357, Short.MAX_VALUE)
         );
 
         viewNestedCarTab.addTab("Corolla", viewNestedCorollaPanel);
@@ -129,11 +132,11 @@ public class AlgoFrame extends javax.swing.JFrame {
         viewNestedInnovaPanel.setLayout(viewNestedInnovaPanelLayout);
         viewNestedInnovaPanelLayout.setHorizontalGroup(
             viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 486, Short.MAX_VALUE)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
         viewNestedInnovaPanelLayout.setVerticalGroup(
             viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 357, Short.MAX_VALUE)
         );
 
         viewNestedCarTab.addTab("Innova", viewNestedInnovaPanel);
@@ -142,11 +145,11 @@ public class AlgoFrame extends javax.swing.JFrame {
         viewNestedHiluxPanel.setLayout(viewNestedHiluxPanelLayout);
         viewNestedHiluxPanelLayout.setHorizontalGroup(
             viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 486, Short.MAX_VALUE)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
         viewNestedHiluxPanelLayout.setVerticalGroup(
             viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 357, Short.MAX_VALUE)
         );
 
         viewNestedCarTab.addTab("Hilux", viewNestedHiluxPanel);
@@ -155,11 +158,11 @@ public class AlgoFrame extends javax.swing.JFrame {
         viewNestedFortunerPanel.setLayout(viewNestedFortunerPanelLayout);
         viewNestedFortunerPanelLayout.setHorizontalGroup(
             viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 486, Short.MAX_VALUE)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
         viewNestedFortunerPanelLayout.setVerticalGroup(
             viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 357, Short.MAX_VALUE)
         );
 
         viewNestedCarTab.addTab("Fortuner", viewNestedFortunerPanel);
@@ -194,8 +197,11 @@ public class AlgoFrame extends javax.swing.JFrame {
         modelRentLabel.setText("Model");
 
         carComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vios", "Avanza", "Corolla", "Innova", "Hilux", "Fortuner" }));
-
-        rentTotalLabel.setText("Rent Total");
+        carComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                carComboBoxActionPerformed(evt);
+            }
+        });
 
         rentCarButton.setText("Rent Car");
         rentCarButton.addActionListener(new java.awt.event.ActionListener() {
@@ -212,8 +218,6 @@ public class AlgoFrame extends javax.swing.JFrame {
             }
         });
 
-        changeLabel.setText("Change tendered");
-
         daysRentLabel.setText("Day/s to Rent");
 
         daysRentField.addActionListener(new java.awt.event.ActionListener() {
@@ -224,6 +228,30 @@ public class AlgoFrame extends javax.swing.JFrame {
 
         rateHeaderLabel.setText("Rate per day");
 
+        rateNumField.setEditable(false);
+
+        rentTotalField.setEditable(false);
+
+        changeNumField.setEditable(false);
+
+        rentTotalButton.setText("Get Rent");
+        rentTotalButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rentTotalButtonActionPerformed(evt);
+            }
+        });
+
+        changeNumButton.setText("Get Change");
+        changeNumButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeNumButtonActionPerformed(evt);
+            }
+        });
+
+        rentTotalLabel.setText("Rent Total");
+
+        changeNumLabel.setText("Change Tendered");
+
         javax.swing.GroupLayout rentACarPanelLayout = new javax.swing.GroupLayout(rentACarPanel);
         rentACarPanel.setLayout(rentACarPanelLayout);
         rentACarPanelLayout.setHorizontalGroup(
@@ -232,34 +260,40 @@ public class AlgoFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(rentACarPanelLayout.createSequentialGroup()
+                        .addGap(89, 89, 89)
                         .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(346, 346, 346))
                     .addGroup(rentACarPanelLayout.createSequentialGroup()
                         .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(nameRentLabel)
                             .addComponent(modelRentLabel)
-                            .addComponent(amountLabel)
                             .addComponent(daysRentLabel)
+                            .addComponent(amountLabel)
                             .addComponent(rentTotalLabel)
-                            .addComponent(changeLabel))
-                        .addGap(27, 27, 27)
+                            .addComponent(changeNumLabel))
+                        .addGap(59, 59, 59)
                         .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(rentACarPanelLayout.createSequentialGroup()
-                                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(changeNumLabel)
-                                    .addComponent(rentTotalNumLabel)
-                                    .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(rentACarPanelLayout.createSequentialGroup()
-                                            .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(210, 210, 210)
-                                            .addComponent(rateLabel))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, rentACarPanelLayout.createSequentialGroup()
-                                            .addComponent(carComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(47, 47, 47)
-                                            .addComponent(rateHeaderLabel))))
-                                .addGap(0, 90, Short.MAX_VALUE))
-                            .addComponent(nameRentField))
+                                .addComponent(rentTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(nameRentField)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rentACarPanelLayout.createSequentialGroup()
+                                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(rentACarPanelLayout.createSequentialGroup()
+                                        .addComponent(carComboBox, 0, 174, Short.MAX_VALUE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(rateHeaderLabel))
+                                    .addGroup(rentACarPanelLayout.createSequentialGroup()
+                                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(changeNumButton, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+                                            .addComponent(rentTotalButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rateNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap())))
         );
         rentACarPanelLayout.setVerticalGroup(
@@ -273,27 +307,29 @@ public class AlgoFrame extends javax.swing.JFrame {
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(modelRentLabel)
                     .addComponent(carComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rateLabel)
-                    .addComponent(rateHeaderLabel))
-                .addGap(18, 18, 18)
+                    .addComponent(rateHeaderLabel)
+                    .addComponent(rateNumField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(daysRentLabel)
-                    .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rentTotalButton))
                 .addGap(18, 18, 18)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rentTotalLabel)
-                    .addComponent(rentTotalNumLabel))
-                .addGap(18, 18, 18)
+                    .addComponent(rentTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rentTotalLabel))
+                .addGap(32, 32, 32)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(amountLabel)
-                    .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(changeNumButton))
                 .addGap(18, 18, 18)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(changeLabel)
-                    .addComponent(changeNumLabel))
-                .addGap(18, 18, 18)
+                    .addComponent(changeNumLabel)
+                    .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
                 .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         mainPanel.addTab("Rent A Car", rentACarPanel);
@@ -329,7 +365,7 @@ public class AlgoFrame extends javax.swing.JFrame {
                         .addGroup(returnACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(returnACarPanelLayout.createSequentialGroup()
                                 .addComponent(returnCarCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 275, Short.MAX_VALUE))
+                                .addGap(0, 309, Short.MAX_VALUE))
                             .addComponent(returnNameField))))
                 .addContainerGap())
         );
@@ -346,23 +382,10 @@ public class AlgoFrame extends javax.swing.JFrame {
                     .addComponent(returnCarCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(returnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(246, Short.MAX_VALUE))
+                .addContainerGap(275, Short.MAX_VALUE))
         );
 
         mainPanel.addTab("Return A Car", returnACarPanel);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 515, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 384, Short.MAX_VALUE)
-        );
-
-        mainPanel.addTab("tab4", jPanel1);
 
         titleHeader.setText("Algo Motors System");
 
@@ -373,11 +396,9 @@ public class AlgoFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mainPanel)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(titleHeader)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addComponent(titleHeader)
+                    .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -430,13 +451,13 @@ public class AlgoFrame extends javax.swing.JFrame {
             }
 
             int totalRent = days * ratePerDay;
-            rentTotalNumLabel.setText(Integer.toString(totalRent));
-            rateLabel.setText(Integer.toString(ratePerDay));
+            rentTotalField.setText(Integer.toString(totalRent));
+            rateNumField.setText(Integer.toString(ratePerDay));
         } else {
-            rentTotalNumLabel.setText("Invalid number of days");
+            rentTotalField.setText("Invalid number of days");
         }
     } catch (NumberFormatException e) {
-        rentTotalNumLabel.setText("Invalid format");
+        rentTotalField.setText("Invalid format");
     }
     }
     
@@ -447,16 +468,16 @@ public class AlgoFrame extends javax.swing.JFrame {
     private void calculateChange() {
         try {
         int amountPaid = Integer.parseInt(amountField.getText());
-        int totalRent = Integer.parseInt(rentTotalNumLabel.getText());
+        int totalRent = Integer.parseInt(rentTotalField.getText());
 
         if (amountPaid >= totalRent) {
             int change = amountPaid - totalRent;
-            changeNumLabel.setText(Integer.toString(change));
+            changeNumField.setText(Integer.toString(change));
         } else {
-            changeNumLabel.setText("Insufficient amount");
+            changeNumField.setText("Insufficient amount");
         }
     } catch (NumberFormatException e) {
-        changeNumLabel.setText("Invalid format");
+        changeNumField.setText("Invalid format");
     }
     }
     
@@ -478,7 +499,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         String name = nameRentField.getText();
         String selectedCar = (String) carComboBox.getSelectedItem();
         int days = Integer.parseInt(daysRentField.getText());
-        int totalRent = Integer.parseInt(rentTotalNumLabel.getText());
+        int totalRent = Integer.parseInt(rentTotalField.getText());
         int amountPaid = Integer.parseInt(amountField.getText());
 
         // Check if the selected car is available
@@ -492,7 +513,7 @@ public class AlgoFrame extends javax.swing.JFrame {
             // Display successful rent popup
             JOptionPane.showMessageDialog(this, "Rent successful!\nName: " + name + "\nCar: " + selectedCar
                     + "\nDays: " + days + "\nTotal Rent: " + totalRent + "\nAmount Paid: " + amountPaid
-                    + "\nChange: " + changeNumLabel.getText(), "Rent Successful", JOptionPane.INFORMATION_MESSAGE);
+                    + "\nChange: " + changeNumField.getText(), "Rent Successful", JOptionPane.INFORMATION_MESSAGE);
 
             // Write user inputs to a .txt file
             writeToFile(name, selectedCar, days, totalRent, amountPaid);
@@ -553,6 +574,48 @@ public class AlgoFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_returnButtonActionPerformed
 
+    private void rentTotalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentTotalButtonActionPerformed
+        calculateRentTotal();
+    }//GEN-LAST:event_rentTotalButtonActionPerformed
+
+    private void changeNumButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeNumButtonActionPerformed
+        calculateChange();
+    }//GEN-LAST:event_changeNumButtonActionPerformed
+
+    private void carComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carComboBoxActionPerformed
+        updateRateNumField();
+    }//GEN-LAST:event_carComboBoxActionPerformed
+
+    private void updateRateNumField() {
+    String selectedCar = (String) carComboBox.getSelectedItem();
+    int ratePerDay = 0;
+
+    // Set rate based on the selected car
+    switch (selectedCar) {
+        case "Vios":
+            ratePerDay = 2000;
+            break;
+        case "Avanza":
+            ratePerDay = 4000;
+            break;
+        case "Corolla":
+            ratePerDay = 5000;
+            break;
+        case "Innova":
+            ratePerDay = 7000;
+            break;
+        case "Hilux":
+            ratePerDay = 9000;
+            break;
+        case "Fortuner":
+            ratePerDay = 10000;
+            break;
+    }
+
+    // Update rateNumField
+    rateNumField.setText(Integer.toString(ratePerDay));
+}
+    
     private void returnCar() throws InvalidReturnException {
     String name = returnNameField.getText();
     String selectedCar = (String) returnCarCombo.getSelectedItem();
@@ -603,32 +666,33 @@ public class AlgoFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField amountField;
+    public javax.swing.JTextField amountField;
     public javax.swing.JLabel amountLabel;
     public javax.swing.JComboBox<String> carComboBox;
-    private javax.swing.JComboBox<String> carComboBox1;
-    private javax.swing.JLabel changeLabel;
-    private javax.swing.JLabel changeNumLabel;
-    private javax.swing.JTextField daysRentField;
+    public javax.swing.JComboBox<String> carComboBox1;
+    public javax.swing.JButton changeNumButton;
+    public javax.swing.JTextField changeNumField;
+    public javax.swing.JLabel changeNumLabel;
+    public javax.swing.JTextField daysRentField;
     public javax.swing.JLabel daysRentLabel;
-    private javax.swing.JPanel jPanel1;
     public javax.swing.JTabbedPane mainPanel;
     public javax.swing.JLabel modelRentLabel;
-    private javax.swing.JLabel modelRentLabel1;
-    private javax.swing.JTextField nameRentField;
+    public javax.swing.JLabel modelRentLabel1;
+    public javax.swing.JTextField nameRentField;
     public javax.swing.JLabel nameRentLabel;
     public javax.swing.JLabel nameReturnLabel;
-    private javax.swing.JLabel rateHeaderLabel;
-    private javax.swing.JLabel rateLabel;
-    private javax.swing.JPanel rentACarPanel;
+    public javax.swing.JLabel rateHeaderLabel;
+    public javax.swing.JTextField rateNumField;
+    public javax.swing.JPanel rentACarPanel;
     public javax.swing.JButton rentCarButton;
-    private javax.swing.JLabel rentTotalLabel;
-    private javax.swing.JLabel rentTotalNumLabel;
-    private javax.swing.JPanel returnACarPanel;
+    public javax.swing.JButton rentTotalButton;
+    public javax.swing.JTextField rentTotalField;
+    public javax.swing.JLabel rentTotalLabel;
+    public javax.swing.JPanel returnACarPanel;
     public javax.swing.JButton returnButton;
-    private javax.swing.JComboBox<String> returnCarCombo;
+    public javax.swing.JComboBox<String> returnCarCombo;
     public javax.swing.JLabel returnModelLabel;
-    private javax.swing.JTextField returnNameField;
+    public javax.swing.JTextField returnNameField;
     public javax.swing.JLabel titleHeader;
     private javax.swing.JPanel viewCarPanel;
     public javax.swing.JPanel viewNestedAvanzaPanel;
