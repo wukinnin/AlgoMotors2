@@ -259,42 +259,40 @@ public class AlgoFrame extends javax.swing.JFrame {
             .addGroup(rentACarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nameRentLabel)
+                    .addComponent(modelRentLabel)
+                    .addComponent(daysRentLabel)
+                    .addComponent(amountLabel)
+                    .addComponent(rentTotalLabel)
+                    .addComponent(changeNumLabel))
+                .addGap(59, 59, 59)
+                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(rentACarPanelLayout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(346, 346, 346))
-                    .addGroup(rentACarPanelLayout.createSequentialGroup()
-                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nameRentLabel)
-                            .addComponent(modelRentLabel)
-                            .addComponent(daysRentLabel)
-                            .addComponent(amountLabel)
-                            .addComponent(rentTotalLabel)
-                            .addComponent(changeNumLabel))
-                        .addGap(59, 59, 59)
-                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(rentTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(nameRentField)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rentACarPanelLayout.createSequentialGroup()
+                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(rentACarPanelLayout.createSequentialGroup()
-                                .addComponent(rentTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(nameRentField)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rentACarPanelLayout.createSequentialGroup()
-                                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(rentACarPanelLayout.createSequentialGroup()
-                                        .addComponent(carComboBox, 0, 174, Short.MAX_VALUE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(rateHeaderLabel))
-                                    .addGroup(rentACarPanelLayout.createSequentialGroup()
-                                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(changeNumButton, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                                            .addComponent(rentTotalButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rateNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap())))
+                                .addComponent(carComboBox, 0, 174, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(rateHeaderLabel))
+                            .addGroup(rentACarPanelLayout.createSequentialGroup()
+                                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(changeNumButton, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+                                    .addComponent(rentTotalButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rateNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+            .addGroup(rentACarPanelLayout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         rentACarPanelLayout.setVerticalGroup(
             rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -327,9 +325,9 @@ public class AlgoFrame extends javax.swing.JFrame {
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(changeNumLabel)
                     .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
+                .addGap(44, 44, 44)
                 .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         mainPanel.addTab("Rent A Car", rentACarPanel);
@@ -406,20 +404,81 @@ public class AlgoFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(titleHeader)
                 .addGap(18, 18, 18)
-                .addComponent(mainPanel)
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void nameRentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameRentFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nameRentFieldActionPerformed
+    private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
+        try {
+            // Check if nameReturnField is not blank
+            if (returnNameField.getText().trim().isEmpty()) {
+                throw new InvalidReturnException("Name field cannot be blank.");
+            }
+
+            returnCar();
+        } catch (InvalidReturnException e) {
+            // Handle the exception, e.g., display an error message
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid Return", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_returnButtonActionPerformed
+
+    private void changeNumButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeNumButtonActionPerformed
+        calculateChange();
+    }//GEN-LAST:event_changeNumButtonActionPerformed
+
+    private void rentTotalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentTotalButtonActionPerformed
+        calculateRentTotal();
+    }//GEN-LAST:event_rentTotalButtonActionPerformed
 
     private void daysRentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daysRentFieldActionPerformed
         calculateRentTotal();
     }//GEN-LAST:event_daysRentFieldActionPerformed
+
+    private void amountFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountFieldActionPerformed
+        calculateChange();
+    }//GEN-LAST:event_amountFieldActionPerformed
+
+    private void rentCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentCarButtonActionPerformed
+        try {
+            // Check if nameRentField is not blank
+            if (nameRentField.getText().trim().isEmpty()) {
+                throw new InvalidRentException("Name field cannot be blank.");
+            }
+
+            // Check if daysRentField is blank, 0, or not an integer
+            try {
+                int days = Integer.parseInt(daysRentField.getText());
+                if (days <= 0) {
+                    throw new InvalidRentException("Number of days must be greater than 0.");
+                }
+            } catch (NumberFormatException e) {
+                throw new InvalidRentException("Invalid input for days. Please enter a valid number.");
+            }
+
+            // Check if changeNumField is blank or not an integer
+            try {
+                int change = Integer.parseInt(changeNumField.getText());
+            } catch (NumberFormatException e) {
+                throw new InvalidRentException("Invalid input for change. Please enter a valid number.");
+            }
+
+            rentCar();
+        } catch (InvalidRentException e) {
+            // Handle the exception, e.g., display an error message
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid Rent", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_rentCarButtonActionPerformed
+
+    private void carComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carComboBoxActionPerformed
+        updateRateNumField();
+    }//GEN-LAST:event_carComboBoxActionPerformed
+
+    private void nameRentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameRentFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameRentFieldActionPerformed
 
     private void calculateRentTotal() {
     try {
@@ -461,10 +520,6 @@ public class AlgoFrame extends javax.swing.JFrame {
     }
     }
     
-    private void amountFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountFieldActionPerformed
-        calculateChange();
-    }//GEN-LAST:event_amountFieldActionPerformed
-
     private void calculateChange() {
         try {
         int amountPaid = Integer.parseInt(amountField.getText());
@@ -480,21 +535,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         changeNumField.setText("Invalid format");
     }
     }
-    
-    private void rentCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentCarButtonActionPerformed
-        try {
-        // Check if nameRentField is not blank
-        if (nameRentField.getText().trim().isEmpty()) {
-            throw new InvalidRentException("Name field cannot be blank.");
-        }
-        
-        rentCar();
-        } catch (InvalidRentException e) {
-        // Handle the exception, e.g., display an error message
-        JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid Rent", JOptionPane.WARNING_MESSAGE);
-        }
-    }//GEN-LAST:event_rentCarButtonActionPerformed
-  
+      
     private void rentCar() throws InvalidRentException {
         String name = nameRentField.getText();
         String selectedCar = (String) carComboBox.getSelectedItem();
@@ -521,7 +562,8 @@ public class AlgoFrame extends javax.swing.JFrame {
             // Display a message if the selected car is not available
             throw new InvalidRentException("Sorry, the selected car is not available.");
         }
-    }
+    }   
+    
     
     private int getCarIndex(String selectedCar) {
         switch (selectedCar) {
@@ -560,32 +602,6 @@ public class AlgoFrame extends javax.swing.JFrame {
         }
     }
     
-    private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
-        try {
-        // Check if nameReturnField is not blank
-        if (returnNameField.getText().trim().isEmpty()) {
-            throw new InvalidReturnException("Name field cannot be blank.");
-        }
-
-        returnCar();
-        } catch (InvalidReturnException e) {
-        // Handle the exception, e.g., display an error message
-        JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid Return", JOptionPane.WARNING_MESSAGE);
-        }
-    }//GEN-LAST:event_returnButtonActionPerformed
-
-    private void rentTotalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentTotalButtonActionPerformed
-        calculateRentTotal();
-    }//GEN-LAST:event_rentTotalButtonActionPerformed
-
-    private void changeNumButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeNumButtonActionPerformed
-        calculateChange();
-    }//GEN-LAST:event_changeNumButtonActionPerformed
-
-    private void carComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carComboBoxActionPerformed
-        updateRateNumField();
-    }//GEN-LAST:event_carComboBoxActionPerformed
-
     private void updateRateNumField() {
     String selectedCar = (String) carComboBox.getSelectedItem();
     int ratePerDay = 0;

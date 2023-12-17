@@ -68,7 +68,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="titleHeader" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="mainPanel" max="32767" attributes="0"/>
+              <Component id="mainPanel" min="-2" pref="443" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -291,54 +291,50 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                              <Component id="rentCarButton" min="-2" pref="100" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="nameRentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="modelRentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="daysRentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="amountLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="rentTotalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="changeNumLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="nameRentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="modelRentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="daysRentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="amountLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="rentTotalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="changeNumLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="rentTotalField" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="nameRentField" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="rentTotalField" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="carComboBox" pref="174" max="32767" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="rateHeaderLabel" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="nameRentField" alignment="0" max="32767" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <Component id="carComboBox" pref="174" max="32767" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="rateHeaderLabel" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="daysRentField" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                                  <Component id="amountField" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                                  <Component id="changeNumField" min="-2" pref="130" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="changeNumButton" pref="104" max="32767" attributes="0"/>
-                                                  <Component id="rentTotalButton" max="32767" attributes="0"/>
-                                              </Group>
-                                          </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="daysRentField" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <Component id="amountField" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <Component id="changeNumField" min="-2" pref="130" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Component id="rateNumField" min="-2" pref="109" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="changeNumButton" pref="104" max="32767" attributes="0"/>
+                                          <Component id="rentTotalButton" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="rateNumField" min="-2" pref="109" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="rentCarButton" min="-2" pref="128" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -379,9 +375,9 @@
                           <Component id="changeNumLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="changeNumField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                       <Component id="rentCarButton" min="-2" pref="50" max="-2" attributes="0"/>
-                      <EmptySpace pref="60" max="32767" attributes="0"/>
+                      <EmptySpace pref="57" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
