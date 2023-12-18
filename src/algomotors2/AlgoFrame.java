@@ -412,7 +412,15 @@ public class AlgoFrame extends javax.swing.JFrame {
             new String [] {
                 "Model", "Is Rented", "Tenant"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(statusTable);
 
         javax.swing.GroupLayout statusPanelLayout = new javax.swing.GroupLayout(statusPanel);
