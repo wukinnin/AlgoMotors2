@@ -74,6 +74,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         changeNumButton = new javax.swing.JButton();
         rentTotalLabel = new javax.swing.JLabel();
         changeNumLabel = new javax.swing.JLabel();
+        clearRentButton = new javax.swing.JButton();
         returnACarPanel = new javax.swing.JPanel();
         returnModelLabel = new javax.swing.JLabel();
         returnCarCombo = new javax.swing.JComboBox<>();
@@ -252,6 +253,13 @@ public class AlgoFrame extends javax.swing.JFrame {
 
         changeNumLabel.setText("Change Tendered");
 
+        clearRentButton.setText("Clear All");
+        clearRentButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearRentButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout rentACarPanelLayout = new javax.swing.GroupLayout(rentACarPanel);
         rentACarPanel.setLayout(rentACarPanelLayout);
         rentACarPanelLayout.setHorizontalGroup(
@@ -292,6 +300,8 @@ public class AlgoFrame extends javax.swing.JFrame {
             .addGroup(rentACarPanelLayout.createSequentialGroup()
                 .addGap(90, 90, 90)
                 .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75)
+                .addComponent(clearRentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         rentACarPanelLayout.setVerticalGroup(
@@ -326,7 +336,9 @@ public class AlgoFrame extends javax.swing.JFrame {
                     .addComponent(changeNumLabel)
                     .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
-                .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(clearRentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(57, Short.MAX_VALUE))
         );
 
@@ -480,6 +492,19 @@ public class AlgoFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_nameRentFieldActionPerformed
 
+    private void clearRentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearRentButtonActionPerformed
+            clearRentFields();
+    }//GEN-LAST:event_clearRentButtonActionPerformed
+
+    private void clearRentFields() {
+    nameRentField.setText("");
+    daysRentField.setText("");
+    amountField.setText("");
+    rentTotalField.setText("");
+    changeNumField.setText("");
+    }
+
+    
     private void calculateRentTotal() {
     try {
         int days = Integer.parseInt(daysRentField.getText());
@@ -689,6 +714,7 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JButton changeNumButton;
     public javax.swing.JTextField changeNumField;
     public javax.swing.JLabel changeNumLabel;
+    public javax.swing.JButton clearRentButton;
     public javax.swing.JTextField daysRentField;
     public javax.swing.JLabel daysRentLabel;
     public javax.swing.JTabbedPane mainPanel;
