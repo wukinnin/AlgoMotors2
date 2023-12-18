@@ -1743,17 +1743,17 @@
                                   <Component id="rentNameField" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="rentAmountField" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="rentAmountField" min="-2" pref="130" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="rentChangeButton" min="-2" pref="104" max="-2" attributes="0"/>
+                                          </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="rentDaysField" min="-2" pref="130" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Component id="rentTotalButton" min="-2" pref="104" max="-2" attributes="0"/>
                                           </Group>
-                                          <Group type="102" attributes="0">
-                                              <Component id="rentTotalField" min="-2" pref="130" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="rentChangeButton" min="-2" pref="104" max="-2" attributes="0"/>
-                                          </Group>
+                                          <Component id="rentTotalField" min="-2" pref="130" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="rentCarCombo" min="-2" pref="130" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -1809,12 +1809,12 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="rentTotalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="rentTotalField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="rentChangeButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="rentAmountLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="rentAmountField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="rentChangeButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
