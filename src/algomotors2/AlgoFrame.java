@@ -1,41 +1,22 @@
 package algomotors2;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
-/**
- *
- * @author nimpad
- */
-
 import javax.swing.*;
 import java.io.*;
 
 public class AlgoFrame extends javax.swing.JFrame {
 
-    /**
-     * Creates new form AlgoFrame
-     */
+    // AlgoFrame constructor
     public AlgoFrame() {
-        initComponents();
-        int carNum = 6; // Assuming there are 6 car types
+        initComponents(); // loads initComponents constructor
+        int carNum = 6; // There are 6 car types
         rentedCarCustomers = new String[carNum];
         carAvailability = new CarAvailability(carNum);
-        // Update rateNumField based on the initial selected car
         updateRateNumField();
     }
 
     private CarAvailability carAvailability;
-    private String[] rentedCarCustomers;  // Array to store the customer name for each rented car
+    private String[] rentedCarCustomers;
 
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -191,12 +172,6 @@ public class AlgoFrame extends javax.swing.JFrame {
         mainPanel.addTab("View Cars", viewCarPanel);
 
         nameRentLabel.setText("Name");
-
-        nameRentField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameRentFieldActionPerformed(evt);
-            }
-        });
 
         modelRentLabel.setText("Model");
 
@@ -468,11 +443,18 @@ public class AlgoFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     *
+     * EVENTS START
+     *
+     */
+    // -------------------------------------------
+    // RETURN BUTTON : OUTPUT RETURNED CAR
     private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
         try {
             // Check if nameReturnField is not blank
             if (returnNameField.getText().trim().isEmpty()) {
-                throw new InvalidReturnException("Name field cannot be blank.");
+                throw new InvalidReturnException("Name cannot be blank.");
             }
 
             returnCar();
@@ -482,161 +464,102 @@ public class AlgoFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_returnButtonActionPerformed
 
+    // CHANGE NUM BUTTON : RENT A CAR : OUTPUT CHANGE FROM AMOUNT
     private void changeNumButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeNumButtonActionPerformed
         calculateChange();
     }//GEN-LAST:event_changeNumButtonActionPerformed
 
+    // RENT TOTAL BUTTON : RENT A CAR : OUTPUT RENT
     private void rentTotalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentTotalButtonActionPerformed
-        calculateRentTotal();
+        calculateRentTotal(); // part of calculateRentTotal()
     }//GEN-LAST:event_rentTotalButtonActionPerformed
 
+    // DAYS RENT FIELD : RENT A CAR : INPUT HOW MANY DAYS TO RENT
     private void daysRentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daysRentFieldActionPerformed
-        calculateRentTotal();
+        calculateRentTotal(); // part of calculateRentTotal()
     }//GEN-LAST:event_daysRentFieldActionPerformed
 
+    // AMOUNT FIELD : RENT A CAR :  INPUT HOW MUCH TO PAY FOR
     private void amountFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountFieldActionPerformed
         calculateChange();
     }//GEN-LAST:event_amountFieldActionPerformed
 
+    // RENT CAR BUTTON : RENT A CAR : OUTPUT THE RENT SUCCESS OUTPUT
     private void rentCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentCarButtonActionPerformed
+        // try multiple exceptions
         try {
-            // Check if nameRentField is not blank
+
+            // Check if name is not blank
             if (nameRentField.getText().trim().isEmpty()) {
-                throw new InvalidRentException("Name field cannot be blank.");
+                throw new InvalidRentException("Invalid. Check if blank or invalid format.");
             }
 
-            // Check if daysRentField is blank, 0, or not an integer
+            // Check if daysRentField is neither blank, 0, nor invalid
             try {
                 int days = Integer.parseInt(daysRentField.getText());
                 if (days <= 0) {
-                    throw new InvalidRentException("Number of days must be greater than 0.");
+                    throw new InvalidRentException("Days must be greater than 0.");
                 }
             } catch (NumberFormatException e) {
-                throw new InvalidRentException("Invalid input for days. Please enter a valid number.");
+                throw new InvalidRentException("Invalid. Must be whole numbers only.");
             }
 
-            // Check if changeNumField is blank or not an integer
+            // Check if changeNumField is neither blank nor invalid
             try {
                 int change = Integer.parseInt(changeNumField.getText());
             } catch (NumberFormatException e) {
-                throw new InvalidRentException("Invalid input for change. Please enter a valid number.");
+                throw new InvalidRentException("Invalid. Check if blank or invalid format.");
             }
 
             rentCar();
-        } catch (InvalidRentException e) {
-            // Handle the exception, e.g., display an error message
+        } catch (InvalidRentException e) { // general error fallback
             JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid Rent", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_rentCarButtonActionPerformed
+    // RENT CAR BUTTON END
 
+    // CAR COMBO BOX : RENT A CAR : SELECT CAR CHOICE
     private void carComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carComboBoxActionPerformed
         updateRateNumField();
     }//GEN-LAST:event_carComboBoxActionPerformed
 
-    private void nameRentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameRentFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nameRentFieldActionPerformed
-
+    // CLEAR RENT BUTTON : RENT A CAR : CLEAR INPUT DATA
     private void clearRentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearRentButtonActionPerformed
-            clearRentFields();
+        clearRentFields();
     }//GEN-LAST:event_clearRentButtonActionPerformed
 
-    private void clearRentFields() {
-    nameRentField.setText("");
-    daysRentField.setText("");
-    amountField.setText("");
-    rentTotalField.setText("");
-    changeNumField.setText("");
-    }
-
-    
-    private void calculateRentTotal() {
-    try {
-        int days = Integer.parseInt(daysRentField.getText());
-        if (days > 0) {
-            int ratePerDay = 0;
-
-            // Set rate based on the selected car
-            String selectedCar = (String) carComboBox.getSelectedItem();
-            switch (selectedCar) {
-                case "Vios":
-                    ratePerDay = 2000;
-                    break;
-                case "Avanza":
-                    ratePerDay = 4000;
-                    break;
-                case "Corolla":
-                    ratePerDay = 5000;
-                    break;
-                case "Innova":
-                    ratePerDay = 7000;
-                    break;
-                case "Hilux":
-                    ratePerDay = 9000;
-                    break;
-                case "Fortuner":
-                    ratePerDay = 10000;
-                    break;
-            }
-
-            int totalRent = days * ratePerDay;
-            rentTotalField.setText(Integer.toString(totalRent));
-            rateNumField.setText(Integer.toString(ratePerDay));
-        } else {
-            rentTotalField.setText("Invalid number of days");
+    /**
+     *
+     * EVENTS END
+     *
+     */
+    // ----------- FUNCTIONS -----------
+    /**
+     *
+     * GLOBAL START 
+     *
+     */
+    // GET RATE PER DAY : GETS APPROPRIATE RATE OF THE CARS
+    private int getRatePerDay(String selectedCar) {
+        switch (selectedCar) {
+            case "Vios":
+                return 2000;
+            case "Avanza":
+                return 4000;
+            case "Corolla":
+                return 5000;
+            case "Innova":
+                return 7000;
+            case "Hilux":
+                return 9000;
+            case "Fortuner":
+                return 10000;
+            default:
+                return 0; // Default rate if the selected car is not recognized
         }
-    } catch (NumberFormatException e) {
-        rentTotalField.setText("Invalid format");
     }
-    }
-    
-    private void calculateChange() {
-        try {
-        int amountPaid = Integer.parseInt(amountField.getText());
-        int totalRent = Integer.parseInt(rentTotalField.getText());
 
-        if (amountPaid >= totalRent) {
-            int change = amountPaid - totalRent;
-            changeNumField.setText(Integer.toString(change));
-        } else {
-            changeNumField.setText("Insufficient amount");
-        }
-    } catch (NumberFormatException e) {
-        changeNumField.setText("Invalid format");
-    }
-    }
-      
-    private void rentCar() throws InvalidRentException {
-        String name = nameRentField.getText();
-        String selectedCar = (String) carComboBox.getSelectedItem();
-        int days = Integer.parseInt(daysRentField.getText());
-        int totalRent = Integer.parseInt(rentTotalField.getText());
-        int amountPaid = Integer.parseInt(amountField.getText());
-
-        // Check if the selected car is available
-        int carIndex = getCarIndex(selectedCar);
-        if (carIndex != -1) {
-            // Update car availability
-            carAvailability.rentCar(carIndex, name);
-            // Record the customer name for the rented car
-            rentedCarCustomers[carIndex] = name;
-
-            // Display successful rent popup
-            JOptionPane.showMessageDialog(this, "Rent successful!\nName: " + name + "\nCar: " + selectedCar
-                    + "\nDays: " + days + "\nTotal Rent: " + totalRent + "\nAmount Paid: " + amountPaid
-                    + "\nChange: " + changeNumField.getText(), "Rent Successful", JOptionPane.INFORMATION_MESSAGE);
-
-            // Write user inputs to a .txt file
-            writeToFile(name, selectedCar, days, totalRent, amountPaid);
-        } else {
-            // Display a message if the selected car is not available
-            throw new InvalidRentException("Sorry, the selected car is not available.");
-        }
-        
-        updateStatusTable(selectedCar, true, name);
-    }   
-    
-    
+    // GET CAR INDEX : GET INDEX OF CARS
     private int getCarIndex(String selectedCar) {
         switch (selectedCar) {
             case "Vios":
@@ -655,120 +578,228 @@ public class AlgoFrame extends javax.swing.JFrame {
                 return -1;
         }
     }
+   /**
+     *
+     * GLOBAL END
+     *
+     */
+   /**
+     *
+     * STATUS TABLE START 
+     *
+     */
+    private void updateStatusTable(String model, boolean isRented, String tenant) {
+        int rowIndex = getCarRowIndex(model);
+        statusTable.setValueAt(model, rowIndex, 0);
 
+        // Check if isRented is true, set "True"; otherwise, set null for a blank spot
+        statusTable.setValueAt(isRented ? "True" : null, rowIndex, 1);
+
+        statusTable.setValueAt(tenant, rowIndex, 2);
+    }
+
+    private int getCarRowIndex(String model) {
+        for (int i = 0; i < statusTable.getRowCount(); i++) {
+            if (statusTable.getValueAt(i, 0).equals(model)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    /**
+     *
+     * STATUS TABLE END 
+     *
+     */
+    /**
+     *
+     * RENT A CAR START
+     *
+     */
+    // CLEAR RENT BUTTON : CLEAR INPUT DATA FOR ALL FIELDS
+    private void clearRentFields() {
+        nameRentField.setText(null);
+        daysRentField.setText(null);
+        amountField.setText(null);
+        rentTotalField.setText(null);
+        changeNumField.setText(null);
+    }
+
+    // UPDATE RATE NUM FIELD : UPDATES FIELD FOR CAR RATE UPON SELECTION
+    private void updateRateNumField() {
+        String selectedCar = (String) carComboBox.getSelectedItem();
+        int ratePerDay = getRatePerDay(selectedCar);
+        rateNumField.setText(Integer.toString(ratePerDay));
+    }
+
+    // CALCULATE RENT TOTAL : GET TOTAL RENT
+    private void calculateRentTotal() {
+        try {
+            // get days from daysRentField input
+            int days = Integer.parseInt(daysRentField.getText());
+
+            // if days are greater than 0
+            if (days > 0) {
+                // set rate based on model
+                String selectedCar = (String) carComboBox.getSelectedItem();
+                int ratePerDay = getRatePerDay(selectedCar);
+
+                // calculate total rent days multiplied by rent
+                int totalRent = days * ratePerDay;
+                rentTotalField.setText(Integer.toString(totalRent));
+                rateNumField.setText(Integer.toString(ratePerDay));
+            } else { // if days is 0 or less
+                rentTotalField.setText("Invalid day number");
+            }
+        } // general fallback error
+        catch (NumberFormatException e) {
+            rentTotalField.setText("Invalid input");
+        }
+    }
+
+    // CALCULATE CHANGE : INPUT COMPLETE RENT
+    private void calculateChange() {
+        try {
+            int amountPaid = Integer.parseInt(amountField.getText());
+            int totalRent = Integer.parseInt(rentTotalField.getText());
+
+            if (amountPaid >= totalRent) {
+                int change = amountPaid - totalRent;
+                changeNumField.setText(Integer.toString(change));
+            } else {
+                changeNumField.setText("Insufficient amount");
+            }
+        } catch (NumberFormatException e) {
+            changeNumField.setText("Invalid format");
+        }
+    }
+
+    // RENT CAR : INPUT COMPLETE RENT
+    private void rentCar() throws InvalidRentException {
+
+        // declare data inputs
+        String name = nameRentField.getText();
+        String selectedCar = (String) carComboBox.getSelectedItem();
+        int days = Integer.parseInt(daysRentField.getText());
+        int totalRent = Integer.parseInt(rentTotalField.getText());
+        int amountPaid = Integer.parseInt(amountField.getText());
+
+        // check if the selected car is available
+        int carIndex = getCarIndex(selectedCar);
+        if (carIndex != -1) {
+            // update car availability
+            carAvailability.rentCar(carIndex, name);
+            // record the tentant name
+            rentedCarCustomers[carIndex] = name;
+
+            // JOptionPane rent success pop up
+            JOptionPane.showMessageDialog(this,
+                    "Rent successful!"
+                    + "\nReciept is printed to file!"
+                    + "\n"
+                    + "\nName: " + name
+                    + "\nCar: " + selectedCar
+                    + "\nDays Rented: " + days
+                    + "\nTotal Rent: " + totalRent
+                    + "\nAmount Paid: " + amountPaid
+                    + "\nChange: " + changeNumField.getText(),
+                    "Rent Successful", JOptionPane.INFORMATION_MESSAGE);
+
+            // Write user inputs to a .txt file
+            writeToFile(name, selectedCar, days, totalRent, amountPaid);
+        } else {
+            // Display a message if the selected car is not available
+            throw new InvalidRentException("Sorry, the selected car is not available.");
+        }
+
+        // update Status Table
+        updateStatusTable(selectedCar, true, name);
+    }
+
+    // WRITE TO FILE : OUTPUTS RENT TO FILE
     private void writeToFile(String name, String car, int days, int totalRent, int amountPaid) {
         try {
-            File outputFile = new File(name+ "_output.txt");
+            File outputFile = new File(name + "_rent.txt");
             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile, true));
 
             // Append user inputs to the file
+            writer.write("----- RENT TRANSACTION -----\n");
             writer.write("Name: " + name + "\n");
             writer.write("Car: " + car + "\n");
-            writer.write("Days: " + days + "\n");
+            writer.write("Days Rented " + days + "\n");
             writer.write("Total Rent: " + totalRent + "\n");
             writer.write("Amount Paid: " + amountPaid + "\n\n");
+            writer.close();
+
+        } catch (IOException e) { // in the event such exceptions can occur
+            e.printStackTrace();
+        }
+    }
+   /**
+     *
+     * RENT A CAR END 
+     *
+     */
+   /**
+     *
+     * RETURN A CAR START 
+     *
+     */ 
+    // RETURN CAR : INPUT RETURN OPERATION
+    private void returnCar() throws InvalidReturnException {
+
+        // initialize variables
+        String name = returnNameField.getText();
+        String selectedCar = (String) returnCarCombo.getSelectedItem();
+        int carIndex = getCarIndex(selectedCar);
+
+        // check if name and model match
+        if (carIndex != -1) {
+            // update car availability
+            carAvailability.returnCar(carIndex, name, selectedCar);
+            // Display successful return popup
+            JOptionPane.showMessageDialog(this,
+                    "Return successful!"
+                    + "\nReciept is printed to file!"
+                    + "\n"
+                    + "\nName: " + name
+                    + "\nCar: " + selectedCar,
+                    "Return Successful", JOptionPane.INFORMATION_MESSAGE);
+            // Write return transaction to a file
+            writeReturnTransactionToFile(name, selectedCar);
+        } else {
+            // Display a message if the car cannot be returned
+            throw new InvalidReturnException("Sorry, unable to complete return. Try checking fields");
+        }
+        // update Status Table
+        updateStatusTable(selectedCar, false, null);
+    }
+
+    private void writeReturnTransactionToFile(String name, String car) {
+        try {
+            File returnFile = new File(name + "_return.txt");
+            BufferedWriter writer = new BufferedWriter(new FileWriter(returnFile, true));
+
+            // Append return transaction details to the file
+            writer.write("----- RENT TRANSACTION -----\n");
+            writer.write("Name: " + name + "\n");
+            writer.write("Car: " + car + "\n\n");
 
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    
-    private void updateRateNumField() {
-    String selectedCar = (String) carComboBox.getSelectedItem();
-    int ratePerDay = 0;
+    /**
+     *
+     * RETURN A CAR END 
+     *
+     */
 
-    // Set rate based on the selected car
-    switch (selectedCar) {
-        case "Vios":
-            ratePerDay = 2000;
-            break;
-        case "Avanza":
-            ratePerDay = 4000;
-            break;
-        case "Corolla":
-            ratePerDay = 5000;
-            break;
-        case "Innova":
-            ratePerDay = 7000;
-            break;
-        case "Hilux":
-            ratePerDay = 9000;
-            break;
-        case "Fortuner":
-            ratePerDay = 10000;
-            break;
-    }
-
-    // Update rateNumField
-    rateNumField.setText(Integer.toString(ratePerDay));
-}
-    
-    private void returnCar() throws InvalidReturnException {
-    String name = returnNameField.getText();
-    String selectedCar = (String) returnCarCombo.getSelectedItem();
-    int carIndex = getCarIndex(selectedCar);
-
-    // Check if the selected car was rented and the customer's name and car model match
-    if (carIndex != -1) {
-        // Update car availability
-        carAvailability.returnCar(carIndex, name, selectedCar);
-        // Clear the customer name for the returned car (no need to check again here)
-
-        // Display successful return popup
-        JOptionPane.showMessageDialog(this, "Return successful!\nName: " + name + "\nCar: " + selectedCar, "Return Successful", JOptionPane.INFORMATION_MESSAGE);
-
-        // Write return transaction to a file
-        writeReturnTransactionToFile(name, selectedCar);
-    } else {
-        // Display a message if the car cannot be returned
-        throw new InvalidReturnException("Sorry, the car cannot be returned.");
-    }
-    
-    updateStatusTable(selectedCar, false, null);
-
-}
-
-    private void writeReturnTransactionToFile(String name, String car) {
-    try {
-        File returnFile = new File(name + "_return.txt");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(returnFile, true));
-
-        // Append return transaction details to the file
-        writer.write("Name: " + name + "\n");
-        writer.write("Car: " + car + "\n\n");
-
-        writer.close();
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-}
-    
-    private void updateStatusTable(String model, boolean isRented, String tenant) {
-    int rowIndex = getCarRowIndex(model);
-    statusTable.setValueAt(model, rowIndex, 0);
-    
-    // Check if isRented is true, set "True"; otherwise, set null for a blank spot
-    statusTable.setValueAt(isRented ? "True" : null, rowIndex, 1);
-    
-    statusTable.setValueAt(tenant, rowIndex, 2);
-}
-    
-    private int getCarRowIndex(String model) {
-    for (int i = 0; i < statusTable.getRowCount(); i++) {
-        if (statusTable.getValueAt(i, 0).equals(model)) {
-            return i;
-        }
-    }
-    return -1;
-}
-
-  
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new AlgoFrame().setVisible(true);
