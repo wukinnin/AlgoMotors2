@@ -81,6 +81,9 @@ public class AlgoFrame extends javax.swing.JFrame {
         nameReturnLabel = new javax.swing.JLabel();
         returnNameField = new javax.swing.JTextField();
         returnButton = new javax.swing.JButton();
+        statusPanel = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        statusTable = new javax.swing.JTable();
         titleHeader = new javax.swing.JLabel();
 
         modelRentLabel1.setText("Model");
@@ -253,7 +256,7 @@ public class AlgoFrame extends javax.swing.JFrame {
 
         changeNumLabel.setText("Change Tendered");
 
-        clearRentButton.setText("Clear All");
+        clearRentButton.setText("Clear All Fields");
         clearRentButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clearRentButtonActionPerformed(evt);
@@ -396,6 +399,40 @@ public class AlgoFrame extends javax.swing.JFrame {
         );
 
         mainPanel.addTab("Return A Car", returnACarPanel);
+
+        statusTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Vios", null, null},
+                {"Avanza", null, null},
+                {"Corolla", null, null},
+                {"Innova", null, null},
+                {"Hilux", null, null},
+                {"Fortuner", null, null}
+            },
+            new String [] {
+                "Model", "Is Rented", "Tenant"
+            }
+        ));
+        jScrollPane1.setViewportView(statusTable);
+
+        javax.swing.GroupLayout statusPanelLayout = new javax.swing.GroupLayout(statusPanel);
+        statusPanel.setLayout(statusPanelLayout);
+        statusPanelLayout.setHorizontalGroup(
+            statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statusPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        statusPanelLayout.setVerticalGroup(
+            statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statusPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(245, Short.MAX_VALUE))
+        );
+
+        mainPanel.addTab("Status Panel", statusPanel);
 
         titleHeader.setText("Algo Motors System");
 
@@ -587,6 +624,8 @@ public class AlgoFrame extends javax.swing.JFrame {
             // Display a message if the selected car is not available
             throw new InvalidRentException("Sorry, the selected car is not available.");
         }
+        
+        updateStatusTable(selectedCar, true, name);
     }   
     
     
@@ -677,6 +716,9 @@ public class AlgoFrame extends javax.swing.JFrame {
         // Display a message if the car cannot be returned
         throw new InvalidReturnException("Sorry, the car cannot be returned.");
     }
+    
+    updateStatusTable(selectedCar, false, null);
+
 }
 
     private void writeReturnTransactionToFile(String name, String car) {
@@ -692,6 +734,25 @@ public class AlgoFrame extends javax.swing.JFrame {
     } catch (IOException e) {
         e.printStackTrace();
     }
+}
+    
+    private void updateStatusTable(String model, boolean isRented, String tenant) {
+    int rowIndex = getCarRowIndex(model);
+    statusTable.setValueAt(model, rowIndex, 0);
+    
+    // Check if isRented is true, set "True"; otherwise, set null for a blank spot
+    statusTable.setValueAt(isRented ? "True" : null, rowIndex, 1);
+    
+    statusTable.setValueAt(tenant, rowIndex, 2);
+}
+    
+    private int getCarRowIndex(String model) {
+    for (int i = 0; i < statusTable.getRowCount(); i++) {
+        if (statusTable.getValueAt(i, 0).equals(model)) {
+            return i;
+        }
+    }
+    return -1;
 }
 
   
@@ -717,6 +778,7 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JButton clearRentButton;
     public javax.swing.JTextField daysRentField;
     public javax.swing.JLabel daysRentLabel;
+    private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTabbedPane mainPanel;
     public javax.swing.JLabel modelRentLabel;
     public javax.swing.JLabel modelRentLabel1;
@@ -735,6 +797,8 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JComboBox<String> returnCarCombo;
     public javax.swing.JLabel returnModelLabel;
     public javax.swing.JTextField returnNameField;
+    public javax.swing.JPanel statusPanel;
+    public javax.swing.JTable statusTable;
     public javax.swing.JLabel titleHeader;
     private javax.swing.JPanel viewCarPanel;
     public javax.swing.JPanel viewNestedAvanzaPanel;
