@@ -1,62 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package algomotors2;
 
-/**
- *
- * @author nimpad
- */
-
 public class CarAvailability {
+
+    // represent availabiity as true or false
     private boolean[] availability;
-    private String[] rentedCarCustomers;
+    // represent renters in a string array
+    private String[] renters;
 
-    public CarAvailability(int numCarTypes) {
-        availability = new boolean[numCarTypes];
-        rentedCarCustomers = new String[numCarTypes]; // Initialize the array for storing customer names
+    // constructor
+    public CarAvailability(int numCars) {
+        // set availability
+        availability = new boolean[numCars];
+        // set renters
+        renters = new String[numCars];
 
-        // Initialize all cars as available
-        for (int i = 0; i < numCarTypes; i++) {
+        // initialize all cars as available
+        for (int i = 0; i < numCars; i++) {
             availability[i] = true;
         }
-    }
-
-    public boolean isCarAvailable(int carIndex) {
-        if (carIndex >= 0 && carIndex < availability.length) {
-            return availability[carIndex];
-        } else {
-            return false;
-        }
-    }
-    
-    private boolean isCorrectCustomer(int carIndex, String customerName) {
-        return customerName.equals(rentedCarCustomers[carIndex]);
-    }
-
-    public void rentCar(int carIndex, String customerName) throws InvalidRentException {
-        if (carIndex >= 0 && carIndex < availability.length && availability[carIndex]) {
-            availability[carIndex] = false;
-            rentedCarCustomers[carIndex] = customerName;
-        } else {
-            throw new InvalidRentException("Invalid rent: The selected car is not available.");
-        }
-    }
-
-     public void returnCar(int carIndex, String customerName, String carModel) throws InvalidReturnException {
-        if (carIndex >= 0 && carIndex < availability.length &&
-            !availability[carIndex] && isCorrectCustomer(carIndex, customerName) && isCorrectCarModel(carIndex, carModel)) {
-            availability[carIndex] = true;
-            rentedCarCustomers[carIndex] = null;
-        } else {
-            throw new InvalidReturnException("Invalid return: The car cannot be returned.");
-        }
-    }
-
-    private boolean isCorrectCarModel(int carIndex, String carModel) {
-        String rentedModel = getCarModel(carIndex);
-        return carModel.equals(rentedModel);
     }
 
     private String getCarModel(int carIndex) {
@@ -74,7 +35,49 @@ public class CarAvailability {
             case 5:
                 return "Fortuner";
             default:
-                return "";
+                return null;
         }
     }
+
+    public boolean isCarAvailable(int carIndex) {
+        // determine availability based on index
+        if (carIndex >= 0 && carIndex < availability.length) {
+            return availability[carIndex];
+        } else {
+            return false;
+        }
+    }
+
+    private boolean isCorrectCustomer(int carIndex, String customerName) {
+        // determine correctness based on index
+        return customerName.equals(renters[carIndex]);
+    }
+
+    private boolean isCorrectCarModel(int carIndex, String carModel) {
+        String rentedModel = getCarModel(carIndex);
+        return carModel.equals(rentedModel);
+    }
+
+    public void rentCar(int carIndex, String name) throws InvalidRentException {
+        if (carIndex >= 0 && carIndex < availability.length && availability[carIndex]) {
+            // update availability to false and add name to renters
+            availability[carIndex] = false;
+            renters[carIndex] = name;
+        } else {
+            throw new InvalidRentException("Invalid rent: The selected car is not available.");
+        }
+    }
+
+    public void returnCar(int carIndex, String customerName, String carModel) throws InvalidReturnException {
+        if (carIndex >= 0 && carIndex < availability.length
+                && !availability[carIndex] && isCorrectCustomer(carIndex, customerName)
+                && isCorrectCarModel(carIndex, carModel)) {
+            // update availability to true and remove name in renters
+            availability[carIndex] = true;
+            renters[carIndex] = null;
+        } else {
+            throw new InvalidReturnException("Invalid return: The car cannot be returned.");
+        }
+    }
+
 }

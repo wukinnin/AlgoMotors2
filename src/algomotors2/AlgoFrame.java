@@ -460,7 +460,7 @@ public class AlgoFrame extends javax.swing.JFrame {
             returnCar();
         } catch (InvalidReturnException e) {
             // Handle the exception, e.g., display an error message
-            JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid Return", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid return: The car cannot be returned.", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_returnButtonActionPerformed
 
@@ -513,7 +513,7 @@ public class AlgoFrame extends javax.swing.JFrame {
 
             rentCar();
         } catch (InvalidRentException e) { // general error fallback
-            JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid Rent", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid rent: The selected car is not available.", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_rentCarButtonActionPerformed
     // RENT CAR BUTTON END
@@ -775,6 +775,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         updateStatusTable(selectedCar, false, null);
     }
 
+    // WRITE RETURN TRANSACTION TO FILE ; OUTPUT RETURN RECIEPT
     private void writeReturnTransactionToFile(String name, String car) {
         try {
             File returnFile = new File(name + "_return.txt");
@@ -795,10 +796,7 @@ public class AlgoFrame extends javax.swing.JFrame {
      * RETURN A CAR END 
      *
      */
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
@@ -839,7 +837,7 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JPanel statusPanel;
     public javax.swing.JTable statusTable;
     public javax.swing.JLabel titleHeader;
-    private javax.swing.JPanel viewCarPanel;
+    public javax.swing.JPanel viewCarPanel;
     public javax.swing.JPanel viewNestedAvanzaPanel;
     public javax.swing.JTabbedPane viewNestedCarTab;
     public javax.swing.JPanel viewNestedCorollaPanel;
