@@ -32,38 +32,152 @@ public class AlgoFrame extends javax.swing.JFrame {
         viewCarPanel = new javax.swing.JPanel();
         viewNestedCarTab = new javax.swing.JTabbedPane();
         viewNestedViosPanel = new javax.swing.JPanel();
+        viosSpecsLabel = new javax.swing.JLabel();
+        viosValuesLabel = new javax.swing.JLabel();
+        viosEngineLabel = new javax.swing.JLabel();
+        viosHorsepowerLabel = new javax.swing.JLabel();
+        viosTransmissionLabel = new javax.swing.JLabel();
+        viosTorqueLabel = new javax.swing.JLabel();
+        viosHeightLabel = new javax.swing.JLabel();
+        viosWidthLabel = new javax.swing.JLabel();
+        viosLengthLabel = new javax.swing.JLabel();
+        viosSeatingCapLabel = new javax.swing.JLabel();
+        viosEngineValuesLabel = new javax.swing.JLabel();
+        viosHorsepowerValuesLabel = new javax.swing.JLabel();
+        viosTorqueValuesLabel = new javax.swing.JLabel();
+        viosTransmissionValuesLabel = new javax.swing.JLabel();
+        viosSeatingCapValuesLabel = new javax.swing.JLabel();
+        viosLengthValuesLabel = new javax.swing.JLabel();
+        viosVidthValuesLabel = new javax.swing.JLabel();
+        viosHeightValuesLabel = new javax.swing.JLabel();
+        viosIMGLabel = new javax.swing.JLabel();
         viewNestedAvanzaPanel = new javax.swing.JPanel();
+        avanzaSpecsLabel = new javax.swing.JLabel();
+        avanzaValuesLabel = new javax.swing.JLabel();
+        avanzaEngineLabel = new javax.swing.JLabel();
+        avanzaHorsepowerLabel = new javax.swing.JLabel();
+        avanzaTorqueLabel = new javax.swing.JLabel();
+        avanzaTransmissionLabel = new javax.swing.JLabel();
+        avanzaSeatingCapLabel = new javax.swing.JLabel();
+        avanzaLengthLabel = new javax.swing.JLabel();
+        avanzaWidthlabel = new javax.swing.JLabel();
+        avanzaHeightLabel = new javax.swing.JLabel();
+        avanzaHeightValuesLabel = new javax.swing.JLabel();
+        avanzaWidthValuesLabel = new javax.swing.JLabel();
+        avanzaLengthValueslabel = new javax.swing.JLabel();
+        avanzaSeatingCapValuesLabel = new javax.swing.JLabel();
+        avanzaTransmissionValuesLabel = new javax.swing.JLabel();
+        avanzaTorqueValuesLabel = new javax.swing.JLabel();
+        avanzaHorsepowerValuesLabel = new javax.swing.JLabel();
+        avanzaEngineValuesLabel = new javax.swing.JLabel();
+        avanzaIMGLabel = new javax.swing.JLabel();
         viewNestedCorollaPanel = new javax.swing.JPanel();
+        corollaSpecsLabel = new javax.swing.JLabel();
+        corollaValuesLabel = new javax.swing.JLabel();
+        corollaEngineLabel = new javax.swing.JLabel();
+        corollaHorsepowerLabel = new javax.swing.JLabel();
+        corollaTorqueLabel = new javax.swing.JLabel();
+        corollaTransmissionLabel = new javax.swing.JLabel();
+        corollaSeatingCapLabel = new javax.swing.JLabel();
+        corollaLengthLabel = new javax.swing.JLabel();
+        corollaWidthLabel = new javax.swing.JLabel();
+        corollaHeightLabel = new javax.swing.JLabel();
+        corollaEngineValuesLabel = new javax.swing.JLabel();
+        corollaHorsepowerValuesLabel = new javax.swing.JLabel();
+        corollaTorqueValuesLabel = new javax.swing.JLabel();
+        corollaTransmissionValuesLabel = new javax.swing.JLabel();
+        corollaSeatingCapValuesLabel = new javax.swing.JLabel();
+        corollaLengthValuesLabel = new javax.swing.JLabel();
+        corollaWidthValuesLabel = new javax.swing.JLabel();
+        corollaHeightValuesLabel = new javax.swing.JLabel();
+        corollaIMGLabel = new javax.swing.JLabel();
         viewNestedInnovaPanel = new javax.swing.JPanel();
+        innovaSpecsLabel = new javax.swing.JLabel();
+        innovaValuesLabel = new javax.swing.JLabel();
+        innovaEngineLabel = new javax.swing.JLabel();
+        innovaHorsepowerLabel3 = new javax.swing.JLabel();
+        innovaTorqueLabel = new javax.swing.JLabel();
+        innovaTransmissionLabel = new javax.swing.JLabel();
+        innovaSeatingCapLabel = new javax.swing.JLabel();
+        innovaLengthLabel = new javax.swing.JLabel();
+        innovaWidthLabel = new javax.swing.JLabel();
+        innovaHeightLabel = new javax.swing.JLabel();
+        innovaEngineValuesLabel = new javax.swing.JLabel();
+        innovaHorsepowerValuesLabel = new javax.swing.JLabel();
+        innovaTorqueValuesLabel = new javax.swing.JLabel();
+        innovaTransmissionValuesLabel = new javax.swing.JLabel();
+        innovaSeatingCapValuesLabel = new javax.swing.JLabel();
+        innovaLengthValuesLabel = new javax.swing.JLabel();
+        innovaWidthValuesLabel = new javax.swing.JLabel();
+        heightValuesLabel3 = new javax.swing.JLabel();
+        innovaIMGLabel = new javax.swing.JLabel();
         viewNestedHiluxPanel = new javax.swing.JPanel();
+        hiluxSpecsLabel = new javax.swing.JLabel();
+        hiluxValuesLabel = new javax.swing.JLabel();
+        hiluxEngineLabel = new javax.swing.JLabel();
+        hiluxHorsepowerLabel = new javax.swing.JLabel();
+        hiluxTorqueLabel = new javax.swing.JLabel();
+        hiluxTransmissionLabel = new javax.swing.JLabel();
+        hiluxSeatingCapLabel = new javax.swing.JLabel();
+        hiluxLengthLabel = new javax.swing.JLabel();
+        hiluxWidthLabel = new javax.swing.JLabel();
+        hiluxHeightLabel = new javax.swing.JLabel();
+        hiluxEngineValuesLabel = new javax.swing.JLabel();
+        hiluxHorsepowerValuesLabel = new javax.swing.JLabel();
+        hiluxTorqueValuesLabel = new javax.swing.JLabel();
+        hiluxTransmissionValuesLabel = new javax.swing.JLabel();
+        hiluxSeatingCapValuesLabel = new javax.swing.JLabel();
+        hiluxLengthValuesLabel = new javax.swing.JLabel();
+        hiluxWidthValuesLabel = new javax.swing.JLabel();
+        hiluxHeightValuesLabel = new javax.swing.JLabel();
+        hiluxIMGLabel = new javax.swing.JLabel();
         viewNestedFortunerPanel = new javax.swing.JPanel();
+        fortunerSpecsLabel = new javax.swing.JLabel();
+        fortunerValuesLabel = new javax.swing.JLabel();
+        fortunerEngineLabel = new javax.swing.JLabel();
+        fortunerHorsepowerLabel = new javax.swing.JLabel();
+        fortunerTorqueLabel = new javax.swing.JLabel();
+        fortunerTransmissionLabel = new javax.swing.JLabel();
+        fortunerSeatingCapLabel = new javax.swing.JLabel();
+        fortunerLengthLabel = new javax.swing.JLabel();
+        fortunerWidthLabel = new javax.swing.JLabel();
+        fortunerHeightLabel = new javax.swing.JLabel();
+        fortunerEngineValuesLabel = new javax.swing.JLabel();
+        fortunerHorsepowerValuesLabel = new javax.swing.JLabel();
+        fortunerTorqueValuesLabel = new javax.swing.JLabel();
+        fortunerTransmissionValuesLabel = new javax.swing.JLabel();
+        fortunerSeatingCapValuesLabel = new javax.swing.JLabel();
+        fortunerLengthValuesLabel = new javax.swing.JLabel();
+        fortunerWidthValuesLabel = new javax.swing.JLabel();
+        fortunerHeightValuesLabel = new javax.swing.JLabel();
+        fortunerIMGLabel = new javax.swing.JLabel();
         rentACarPanel = new javax.swing.JPanel();
-        nameRentLabel = new javax.swing.JLabel();
-        nameRentField = new javax.swing.JTextField();
-        modelRentLabel = new javax.swing.JLabel();
-        carComboBox = new javax.swing.JComboBox<>();
+        rentNameLabel = new javax.swing.JLabel();
+        rentNameField = new javax.swing.JTextField();
+        rentModelLabel = new javax.swing.JLabel();
+        rentCarCombo = new javax.swing.JComboBox<>();
         rentCarButton = new javax.swing.JButton();
-        amountLabel = new javax.swing.JLabel();
-        amountField = new javax.swing.JTextField();
-        daysRentLabel = new javax.swing.JLabel();
-        daysRentField = new javax.swing.JTextField();
+        rentAmountLabel = new javax.swing.JLabel();
+        rentAmountField = new javax.swing.JTextField();
+        rentDaysLabel = new javax.swing.JLabel();
+        rentDaysField = new javax.swing.JTextField();
         rateHeaderLabel = new javax.swing.JLabel();
         rateNumField = new javax.swing.JTextField();
         rentTotalField = new javax.swing.JTextField();
-        changeNumField = new javax.swing.JTextField();
+        rentChangeField = new javax.swing.JTextField();
         rentTotalButton = new javax.swing.JButton();
-        changeNumButton = new javax.swing.JButton();
+        rentChangeButton = new javax.swing.JButton();
         rentTotalLabel = new javax.swing.JLabel();
-        changeNumLabel = new javax.swing.JLabel();
-        clearRentButton = new javax.swing.JButton();
+        rentChangeLabel = new javax.swing.JLabel();
+        rentClearButton = new javax.swing.JButton();
         returnACarPanel = new javax.swing.JPanel();
         returnModelLabel = new javax.swing.JLabel();
         returnCarCombo = new javax.swing.JComboBox<>();
-        nameReturnLabel = new javax.swing.JLabel();
+        returnNameLabel = new javax.swing.JLabel();
         returnNameField = new javax.swing.JTextField();
         returnButton = new javax.swing.JButton();
         statusPanel = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        statusPane = new javax.swing.JScrollPane();
         statusTable = new javax.swing.JTable();
         titleHeader = new javax.swing.JLabel();
 
@@ -74,80 +188,728 @@ public class AlgoFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Algo Motors");
 
+        viosSpecsLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        viosSpecsLabel.setText("SPECIFICATIONS");
+
+        viosValuesLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        viosValuesLabel.setText("VALUES");
+
+        viosEngineLabel.setText("Engine");
+
+        viosHorsepowerLabel.setText("Horsepower");
+
+        viosTransmissionLabel.setText("Transmission");
+
+        viosTorqueLabel.setText("Torque");
+
+        viosHeightLabel.setText("Height");
+
+        viosWidthLabel.setText("Width");
+
+        viosLengthLabel.setText("Length");
+
+        viosSeatingCapLabel.setText("Seating Capacity");
+
+        viosEngineValuesLabel.setText("1.5-liter 4-cylinder gasoline engine");
+
+        viosHorsepowerValuesLabel.setText("90");
+
+        viosTorqueValuesLabel.setText("120 Nm");
+
+        viosTransmissionValuesLabel.setText("5-speed manual");
+
+        viosSeatingCapValuesLabel.setText("5");
+
+        viosLengthValuesLabel.setText("4,425mm");
+
+        viosVidthValuesLabel.setText("1,740mm");
+
+        viosHeightValuesLabel.setText("1,480mm");
+
+        viosIMGLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/algomotors2/Vios.jpg"))); // NOI18N
+        viosIMGLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
         javax.swing.GroupLayout viewNestedViosPanelLayout = new javax.swing.GroupLayout(viewNestedViosPanel);
         viewNestedViosPanel.setLayout(viewNestedViosPanelLayout);
         viewNestedViosPanelLayout.setHorizontalGroup(
             viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(viewNestedViosPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(viosSpecsLabel)
+                    .addComponent(viosHorsepowerLabel)
+                    .addComponent(viosTorqueLabel)
+                    .addComponent(viosTransmissionLabel)
+                    .addComponent(viosSeatingCapLabel)
+                    .addComponent(viosLengthLabel)
+                    .addComponent(viosWidthLabel)
+                    .addComponent(viosHeightLabel)
+                    .addComponent(viosEngineLabel))
+                .addGap(38, 38, 38)
+                .addGroup(viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(viosValuesLabel)
+                    .addComponent(viosHorsepowerValuesLabel)
+                    .addComponent(viosTorqueValuesLabel)
+                    .addComponent(viosTransmissionValuesLabel)
+                    .addComponent(viosSeatingCapValuesLabel)
+                    .addComponent(viosLengthValuesLabel)
+                    .addComponent(viosVidthValuesLabel)
+                    .addComponent(viosHeightValuesLabel)
+                    .addComponent(viosEngineValuesLabel))
+                .addGap(28, 28, 28)
+                .addComponent(viosIMGLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         viewNestedViosPanelLayout.setVerticalGroup(
             viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
+            .addGroup(viewNestedViosPanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(viosIMGLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(viewNestedViosPanelLayout.createSequentialGroup()
+                        .addGroup(viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(viosSpecsLabel)
+                            .addComponent(viosValuesLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(viewNestedViosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(viewNestedViosPanelLayout.createSequentialGroup()
+                                .addComponent(viosEngineLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosHorsepowerLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosTorqueLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosTransmissionLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosSeatingCapLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosLengthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosWidthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosHeightLabel))
+                            .addGroup(viewNestedViosPanelLayout.createSequentialGroup()
+                                .addComponent(viosEngineValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosHorsepowerValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosTorqueValuesLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosTransmissionValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosSeatingCapValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosLengthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosVidthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(viosHeightValuesLabel)))))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         viewNestedCarTab.addTab("Vios", viewNestedViosPanel);
+
+        avanzaSpecsLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        avanzaSpecsLabel.setText("SPECIFICATIONS");
+
+        avanzaValuesLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        avanzaValuesLabel.setText("VALUES");
+
+        avanzaEngineLabel.setText("Engine");
+
+        avanzaHorsepowerLabel.setText("Horsepower");
+
+        avanzaTorqueLabel.setText("Torque");
+
+        avanzaTransmissionLabel.setText("Transmission");
+
+        avanzaSeatingCapLabel.setText("Seating Capacity");
+
+        avanzaLengthLabel.setText("Length");
+
+        avanzaWidthlabel.setText("Width");
+
+        avanzaHeightLabel.setText("Height");
+
+        avanzaHeightValuesLabel.setText("1,695mm");
+
+        avanzaWidthValuesLabel.setText("1,660mm");
+
+        avanzaLengthValueslabel.setText("4,190mm");
+
+        avanzaSeatingCapValuesLabel.setText("7");
+
+        avanzaTransmissionValuesLabel.setText("5-speed manual");
+
+        avanzaTorqueValuesLabel.setText("136 Nm");
+
+        avanzaHorsepowerValuesLabel.setText("103");
+
+        avanzaEngineValuesLabel.setText("1.5-liter 4-cylinder gasoline engine");
+
+        avanzaIMGLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/algomotors2/Avanza.jpg"))); // NOI18N
+        avanzaIMGLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout viewNestedAvanzaPanelLayout = new javax.swing.GroupLayout(viewNestedAvanzaPanel);
         viewNestedAvanzaPanel.setLayout(viewNestedAvanzaPanelLayout);
         viewNestedAvanzaPanelLayout.setHorizontalGroup(
             viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(viewNestedAvanzaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(avanzaSpecsLabel)
+                    .addComponent(avanzaHorsepowerLabel)
+                    .addComponent(avanzaTorqueLabel)
+                    .addComponent(avanzaTransmissionLabel)
+                    .addComponent(avanzaSeatingCapLabel)
+                    .addComponent(avanzaLengthLabel)
+                    .addComponent(avanzaWidthlabel)
+                    .addComponent(avanzaHeightLabel)
+                    .addComponent(avanzaEngineLabel))
+                .addGap(38, 38, 38)
+                .addGroup(viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(avanzaValuesLabel)
+                    .addComponent(avanzaHorsepowerValuesLabel)
+                    .addComponent(avanzaTorqueValuesLabel)
+                    .addComponent(avanzaTransmissionValuesLabel)
+                    .addComponent(avanzaSeatingCapValuesLabel)
+                    .addComponent(avanzaLengthValueslabel)
+                    .addComponent(avanzaWidthValuesLabel)
+                    .addComponent(avanzaHeightValuesLabel)
+                    .addComponent(avanzaEngineValuesLabel))
+                .addGap(28, 28, 28)
+                .addComponent(avanzaIMGLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         viewNestedAvanzaPanelLayout.setVerticalGroup(
             viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
+            .addGroup(viewNestedAvanzaPanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(avanzaIMGLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(viewNestedAvanzaPanelLayout.createSequentialGroup()
+                        .addGroup(viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(avanzaSpecsLabel)
+                            .addComponent(avanzaValuesLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(viewNestedAvanzaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(viewNestedAvanzaPanelLayout.createSequentialGroup()
+                                .addComponent(avanzaEngineLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaHorsepowerLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaTorqueLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaTransmissionLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaSeatingCapLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaLengthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaWidthlabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaHeightLabel))
+                            .addGroup(viewNestedAvanzaPanelLayout.createSequentialGroup()
+                                .addComponent(avanzaEngineValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaHorsepowerValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaTorqueValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaTransmissionValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaSeatingCapValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaLengthValueslabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaWidthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(avanzaHeightValuesLabel)))))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         viewNestedCarTab.addTab("Avanza", viewNestedAvanzaPanel);
+
+        corollaSpecsLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        corollaSpecsLabel.setText("SPECIFICATIONS");
+
+        corollaValuesLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        corollaValuesLabel.setText("VALUES");
+
+        corollaEngineLabel.setText("Engine");
+
+        corollaHorsepowerLabel.setText("Horsepower");
+
+        corollaTorqueLabel.setText("Torque");
+
+        corollaTransmissionLabel.setText("Transmission");
+
+        corollaSeatingCapLabel.setText("Seating Capacity");
+
+        corollaLengthLabel.setText("Length");
+
+        corollaWidthLabel.setText("Width");
+
+        corollaHeightLabel.setText("Height");
+
+        corollaEngineValuesLabel.setText("2.0-liter inline 4 gasoline engine");
+
+        corollaHorsepowerValuesLabel.setText("169");
+
+        corollaTorqueValuesLabel.setText("151 Nm");
+
+        corollaTransmissionValuesLabel.setText("variable-speed automatic");
+
+        corollaSeatingCapValuesLabel.setText("5");
+
+        corollaLengthValuesLabel.setText("4,638mm");
+
+        corollaWidthValuesLabel.setText("1,781mm");
+
+        corollaHeightValuesLabel.setText("1,435mm");
+
+        corollaIMGLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/algomotors2/Corolla.jpg"))); // NOI18N
+        corollaIMGLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout viewNestedCorollaPanelLayout = new javax.swing.GroupLayout(viewNestedCorollaPanel);
         viewNestedCorollaPanel.setLayout(viewNestedCorollaPanelLayout);
         viewNestedCorollaPanelLayout.setHorizontalGroup(
             viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(viewNestedCorollaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(corollaSpecsLabel)
+                    .addComponent(corollaHorsepowerLabel)
+                    .addComponent(corollaTorqueLabel)
+                    .addComponent(corollaTransmissionLabel)
+                    .addComponent(corollaSeatingCapLabel)
+                    .addComponent(corollaLengthLabel)
+                    .addComponent(corollaWidthLabel)
+                    .addComponent(corollaHeightLabel)
+                    .addComponent(corollaEngineLabel))
+                .addGap(38, 38, 38)
+                .addGroup(viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(corollaValuesLabel)
+                    .addComponent(corollaHorsepowerValuesLabel)
+                    .addComponent(corollaTorqueValuesLabel)
+                    .addComponent(corollaTransmissionValuesLabel)
+                    .addComponent(corollaSeatingCapValuesLabel)
+                    .addComponent(corollaLengthValuesLabel)
+                    .addComponent(corollaWidthValuesLabel)
+                    .addComponent(corollaHeightValuesLabel)
+                    .addComponent(corollaEngineValuesLabel))
+                .addGap(43, 43, 43)
+                .addComponent(corollaIMGLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         viewNestedCorollaPanelLayout.setVerticalGroup(
             viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
+            .addGroup(viewNestedCorollaPanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(corollaIMGLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(viewNestedCorollaPanelLayout.createSequentialGroup()
+                        .addGroup(viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(corollaSpecsLabel)
+                            .addComponent(corollaValuesLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(viewNestedCorollaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(viewNestedCorollaPanelLayout.createSequentialGroup()
+                                .addComponent(corollaEngineLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaHorsepowerLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaTorqueLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaTransmissionLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaSeatingCapLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaLengthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaWidthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaHeightLabel))
+                            .addGroup(viewNestedCorollaPanelLayout.createSequentialGroup()
+                                .addComponent(corollaEngineValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaHorsepowerValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaTorqueValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaTransmissionValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaSeatingCapValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaLengthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaWidthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(corollaHeightValuesLabel)))))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         viewNestedCarTab.addTab("Corolla", viewNestedCorollaPanel);
+
+        innovaSpecsLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        innovaSpecsLabel.setText("SPECIFICATIONS");
+
+        innovaValuesLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        innovaValuesLabel.setText("VALUES");
+
+        innovaEngineLabel.setText("Engine");
+
+        innovaHorsepowerLabel3.setText("Horsepower");
+
+        innovaTorqueLabel.setText("Torque");
+
+        innovaTransmissionLabel.setText("Transmission");
+
+        innovaSeatingCapLabel.setText("Seating Capacity");
+
+        innovaLengthLabel.setText("Length");
+
+        innovaWidthLabel.setText("Width");
+
+        innovaHeightLabel.setText("Height");
+
+        innovaEngineValuesLabel.setText("1.5-liter 4-cylinder gasoline engine");
+
+        innovaHorsepowerValuesLabel.setText("103");
+
+        innovaTorqueValuesLabel.setText("136 Nm");
+
+        innovaTransmissionValuesLabel.setText("5-speed manual");
+
+        innovaSeatingCapValuesLabel.setText("7");
+
+        innovaLengthValuesLabel.setText("4,190mm");
+
+        innovaWidthValuesLabel.setText("1,660mm");
+
+        heightValuesLabel3.setText("1,695mm");
+
+        innovaIMGLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/algomotors2/Innova.jpg"))); // NOI18N
+        innovaIMGLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout viewNestedInnovaPanelLayout = new javax.swing.GroupLayout(viewNestedInnovaPanel);
         viewNestedInnovaPanel.setLayout(viewNestedInnovaPanelLayout);
         viewNestedInnovaPanelLayout.setHorizontalGroup(
             viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(viewNestedInnovaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(innovaSpecsLabel)
+                    .addComponent(innovaHorsepowerLabel3)
+                    .addComponent(innovaTorqueLabel)
+                    .addComponent(innovaTransmissionLabel)
+                    .addComponent(innovaSeatingCapLabel)
+                    .addComponent(innovaLengthLabel)
+                    .addComponent(innovaWidthLabel)
+                    .addComponent(innovaHeightLabel)
+                    .addComponent(innovaEngineLabel))
+                .addGap(38, 38, 38)
+                .addGroup(viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(innovaValuesLabel)
+                    .addComponent(innovaHorsepowerValuesLabel)
+                    .addComponent(innovaTorqueValuesLabel)
+                    .addComponent(innovaTransmissionValuesLabel)
+                    .addComponent(innovaSeatingCapValuesLabel)
+                    .addComponent(innovaLengthValuesLabel)
+                    .addComponent(innovaWidthValuesLabel)
+                    .addComponent(heightValuesLabel3)
+                    .addComponent(innovaEngineValuesLabel))
+                .addGap(28, 28, 28)
+                .addComponent(innovaIMGLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         viewNestedInnovaPanelLayout.setVerticalGroup(
             viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
+            .addGroup(viewNestedInnovaPanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(innovaIMGLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(viewNestedInnovaPanelLayout.createSequentialGroup()
+                        .addGroup(viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(innovaSpecsLabel)
+                            .addComponent(innovaValuesLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(viewNestedInnovaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(viewNestedInnovaPanelLayout.createSequentialGroup()
+                                .addComponent(innovaEngineLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaHorsepowerLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaTorqueLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaTransmissionLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaSeatingCapLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaLengthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaWidthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaHeightLabel))
+                            .addGroup(viewNestedInnovaPanelLayout.createSequentialGroup()
+                                .addComponent(innovaEngineValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaHorsepowerValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaTorqueValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaTransmissionValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaSeatingCapValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaLengthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(innovaWidthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(heightValuesLabel3)))))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         viewNestedCarTab.addTab("Innova", viewNestedInnovaPanel);
+
+        hiluxSpecsLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        hiluxSpecsLabel.setText("SPECIFICATIONS");
+
+        hiluxValuesLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        hiluxValuesLabel.setText("VALUES");
+
+        hiluxEngineLabel.setText("Engine");
+
+        hiluxHorsepowerLabel.setText("Horsepower");
+
+        hiluxTorqueLabel.setText("Torque");
+
+        hiluxTransmissionLabel.setText("Transmission");
+
+        hiluxSeatingCapLabel.setText("Seating Capacity");
+
+        hiluxLengthLabel.setText("Length");
+
+        hiluxWidthLabel.setText("Width");
+
+        hiluxHeightLabel.setText("Height");
+
+        hiluxEngineValuesLabel.setText("2.4-liter diesel");
+
+        hiluxHorsepowerValuesLabel.setText("148");
+
+        hiluxTorqueValuesLabel.setText("400 Nm");
+
+        hiluxTransmissionValuesLabel.setText("6-speed manual/automatic");
+
+        hiluxSeatingCapValuesLabel.setText("5");
+
+        hiluxLengthValuesLabel.setText("5,270mm");
+
+        hiluxWidthValuesLabel.setText("1,800mm");
+
+        hiluxHeightValuesLabel.setText("1,795mm");
+
+        hiluxIMGLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/algomotors2/Hilux.jpg"))); // NOI18N
+        hiluxIMGLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout viewNestedHiluxPanelLayout = new javax.swing.GroupLayout(viewNestedHiluxPanel);
         viewNestedHiluxPanel.setLayout(viewNestedHiluxPanelLayout);
         viewNestedHiluxPanelLayout.setHorizontalGroup(
             viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(viewNestedHiluxPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hiluxSpecsLabel)
+                    .addComponent(hiluxHorsepowerLabel)
+                    .addComponent(hiluxTorqueLabel)
+                    .addComponent(hiluxTransmissionLabel)
+                    .addComponent(hiluxSeatingCapLabel)
+                    .addComponent(hiluxLengthLabel)
+                    .addComponent(hiluxWidthLabel)
+                    .addComponent(hiluxHeightLabel)
+                    .addComponent(hiluxEngineLabel))
+                .addGap(38, 38, 38)
+                .addGroup(viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hiluxValuesLabel)
+                    .addComponent(hiluxHorsepowerValuesLabel)
+                    .addComponent(hiluxTorqueValuesLabel)
+                    .addComponent(hiluxTransmissionValuesLabel)
+                    .addComponent(hiluxSeatingCapValuesLabel)
+                    .addComponent(hiluxLengthValuesLabel)
+                    .addComponent(hiluxWidthValuesLabel)
+                    .addComponent(hiluxHeightValuesLabel)
+                    .addComponent(hiluxEngineValuesLabel))
+                .addGap(66, 66, 66)
+                .addComponent(hiluxIMGLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         viewNestedHiluxPanelLayout.setVerticalGroup(
             viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
+            .addGroup(viewNestedHiluxPanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(hiluxIMGLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(viewNestedHiluxPanelLayout.createSequentialGroup()
+                        .addGroup(viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(hiluxSpecsLabel)
+                            .addComponent(hiluxValuesLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(viewNestedHiluxPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(viewNestedHiluxPanelLayout.createSequentialGroup()
+                                .addComponent(hiluxEngineLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxHorsepowerLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxTorqueLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxTransmissionLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxSeatingCapLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxLengthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxWidthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxHeightLabel))
+                            .addGroup(viewNestedHiluxPanelLayout.createSequentialGroup()
+                                .addComponent(hiluxEngineValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxHorsepowerValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxTorqueValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxTransmissionValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxSeatingCapValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxLengthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxWidthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(hiluxHeightValuesLabel)))))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         viewNestedCarTab.addTab("Hilux", viewNestedHiluxPanel);
+
+        fortunerSpecsLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        fortunerSpecsLabel.setText("SPECIFICATIONS");
+
+        fortunerValuesLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        fortunerValuesLabel.setText("VALUES");
+
+        fortunerEngineLabel.setText("Engine");
+
+        fortunerHorsepowerLabel.setText("Horsepower");
+
+        fortunerTorqueLabel.setText("Torque");
+
+        fortunerTransmissionLabel.setText("Transmission");
+
+        fortunerSeatingCapLabel.setText("Seating Capacity");
+
+        fortunerLengthLabel.setText("Length");
+
+        fortunerWidthLabel.setText("Width");
+
+        fortunerHeightLabel.setText("Height");
+
+        fortunerEngineValuesLabel.setText("2.7-liter 4-cylinder gasoline engine");
+
+        fortunerHorsepowerValuesLabel.setText("164");
+
+        fortunerTorqueValuesLabel.setText("245 Nm");
+
+        fortunerTransmissionValuesLabel.setText("Automatic");
+
+        fortunerSeatingCapValuesLabel.setText("7");
+
+        fortunerLengthValuesLabel.setText("4,795mm");
+
+        fortunerWidthValuesLabel.setText("1,885mm");
+
+        fortunerHeightValuesLabel.setText("1,835mm");
+
+        fortunerIMGLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/algomotors2/Fortuner.jpg"))); // NOI18N
+        fortunerIMGLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout viewNestedFortunerPanelLayout = new javax.swing.GroupLayout(viewNestedFortunerPanel);
         viewNestedFortunerPanel.setLayout(viewNestedFortunerPanelLayout);
         viewNestedFortunerPanelLayout.setHorizontalGroup(
             viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(viewNestedFortunerPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(fortunerSpecsLabel)
+                    .addComponent(fortunerHorsepowerLabel)
+                    .addComponent(fortunerTorqueLabel)
+                    .addComponent(fortunerTransmissionLabel)
+                    .addComponent(fortunerSeatingCapLabel)
+                    .addComponent(fortunerLengthLabel)
+                    .addComponent(fortunerWidthLabel)
+                    .addComponent(fortunerHeightLabel)
+                    .addComponent(fortunerEngineLabel))
+                .addGap(38, 38, 38)
+                .addGroup(viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(fortunerTransmissionValuesLabel)
+                    .addComponent(fortunerSeatingCapValuesLabel)
+                    .addComponent(fortunerLengthValuesLabel)
+                    .addComponent(fortunerWidthValuesLabel)
+                    .addComponent(fortunerHeightValuesLabel)
+                    .addComponent(fortunerValuesLabel)
+                    .addComponent(fortunerEngineValuesLabel)
+                    .addComponent(fortunerHorsepowerValuesLabel)
+                    .addComponent(fortunerTorqueValuesLabel))
+                .addGap(28, 28, 28)
+                .addComponent(fortunerIMGLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         viewNestedFortunerPanelLayout.setVerticalGroup(
             viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
+            .addGroup(viewNestedFortunerPanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(fortunerIMGLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(viewNestedFortunerPanelLayout.createSequentialGroup()
+                        .addGroup(viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(fortunerSpecsLabel)
+                            .addComponent(fortunerValuesLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(viewNestedFortunerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(viewNestedFortunerPanelLayout.createSequentialGroup()
+                                .addComponent(fortunerEngineLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerHorsepowerLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerTorqueLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerTransmissionLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerSeatingCapLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerLengthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerWidthLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerHeightLabel))
+                            .addGroup(viewNestedFortunerPanelLayout.createSequentialGroup()
+                                .addComponent(fortunerEngineValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerHorsepowerValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerTorqueValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerTransmissionValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerSeatingCapValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerLengthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerWidthValuesLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fortunerHeightValuesLabel)))))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         viewNestedCarTab.addTab("Fortuner", viewNestedFortunerPanel);
@@ -171,14 +933,14 @@ public class AlgoFrame extends javax.swing.JFrame {
 
         mainPanel.addTab("View Cars", viewCarPanel);
 
-        nameRentLabel.setText("Name");
+        rentNameLabel.setText("Name");
 
-        modelRentLabel.setText("Model");
+        rentModelLabel.setText("Model");
 
-        carComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vios", "Avanza", "Corolla", "Innova", "Hilux", "Fortuner" }));
-        carComboBox.addActionListener(new java.awt.event.ActionListener() {
+        rentCarCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vios", "Avanza", "Corolla", "Innova", "Hilux", "Fortuner" }));
+        rentCarCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                carComboBoxActionPerformed(evt);
+                rentCarComboActionPerformed(evt);
             }
         });
 
@@ -189,19 +951,19 @@ public class AlgoFrame extends javax.swing.JFrame {
             }
         });
 
-        amountLabel.setText("Amount");
+        rentAmountLabel.setText("Amount");
 
-        amountField.addActionListener(new java.awt.event.ActionListener() {
+        rentAmountField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                amountFieldActionPerformed(evt);
+                rentAmountFieldActionPerformed(evt);
             }
         });
 
-        daysRentLabel.setText("Day/s to Rent");
+        rentDaysLabel.setText("Day/s to Rent");
 
-        daysRentField.addActionListener(new java.awt.event.ActionListener() {
+        rentDaysField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                daysRentFieldActionPerformed(evt);
+                rentDaysFieldActionPerformed(evt);
             }
         });
 
@@ -211,7 +973,7 @@ public class AlgoFrame extends javax.swing.JFrame {
 
         rentTotalField.setEditable(false);
 
-        changeNumField.setEditable(false);
+        rentChangeField.setEditable(false);
 
         rentTotalButton.setText("Get Rent");
         rentTotalButton.addActionListener(new java.awt.event.ActionListener() {
@@ -220,21 +982,21 @@ public class AlgoFrame extends javax.swing.JFrame {
             }
         });
 
-        changeNumButton.setText("Get Change");
-        changeNumButton.addActionListener(new java.awt.event.ActionListener() {
+        rentChangeButton.setText("Get Change");
+        rentChangeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                changeNumButtonActionPerformed(evt);
+                rentChangeButtonActionPerformed(evt);
             }
         });
 
         rentTotalLabel.setText("Rent Total");
 
-        changeNumLabel.setText("Change Tendered");
+        rentChangeLabel.setText("Change Tendered");
 
-        clearRentButton.setText("Clear All Fields");
-        clearRentButton.addActionListener(new java.awt.event.ActionListener() {
+        rentClearButton.setText("Clear All Fields");
+        rentClearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clearRentButtonActionPerformed(evt);
+                rentClearButtonActionPerformed(evt);
             }
         });
 
@@ -245,79 +1007,82 @@ public class AlgoFrame extends javax.swing.JFrame {
             .addGroup(rentACarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(nameRentLabel)
-                    .addComponent(modelRentLabel)
-                    .addComponent(daysRentLabel)
-                    .addComponent(amountLabel)
-                    .addComponent(rentTotalLabel)
-                    .addComponent(changeNumLabel))
-                .addGap(59, 59, 59)
-                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(rentACarPanelLayout.createSequentialGroup()
-                        .addComponent(rentTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(nameRentField)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rentACarPanelLayout.createSequentialGroup()
-                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(rentACarPanelLayout.createSequentialGroup()
-                                .addComponent(carComboBox, 0, 174, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(rateHeaderLabel))
+                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rentNameLabel)
+                            .addComponent(rentModelLabel)
+                            .addComponent(rentDaysLabel)
+                            .addComponent(rentTotalLabel)
+                            .addComponent(rentAmountLabel))
+                        .addGap(40, 40, 40)
+                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rentNameField)
                             .addGroup(rentACarPanelLayout.createSequentialGroup()
                                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(changeNumButton, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
-                                    .addComponent(rentTotalButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rateNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(rentAmountField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(rentACarPanelLayout.createSequentialGroup()
+                                        .addComponent(rentDaysField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(rentTotalButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(rentACarPanelLayout.createSequentialGroup()
+                                        .addComponent(rentTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(rentChangeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(rentACarPanelLayout.createSequentialGroup()
+                                        .addComponent(rentCarCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(rateHeaderLabel)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(rateNumField, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 272, Short.MAX_VALUE))))
+                    .addGroup(rentACarPanelLayout.createSequentialGroup()
+                        .addComponent(rentChangeLabel)
+                        .addGap(18, 18, 18)
+                        .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rentChangeField, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(rentACarPanelLayout.createSequentialGroup()
+                                .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(rentClearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(rentACarPanelLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
-                .addComponent(clearRentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         rentACarPanelLayout.setVerticalGroup(
             rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rentACarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameRentLabel)
-                    .addComponent(nameRentField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(rentNameLabel)
+                    .addComponent(rentNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(modelRentLabel)
-                    .addComponent(carComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rentModelLabel)
+                    .addComponent(rentCarCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rateHeaderLabel)
                     .addComponent(rateNumField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(daysRentLabel)
-                    .addComponent(daysRentField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rentDaysField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rentDaysLabel)
                     .addComponent(rentTotalButton))
                 .addGap(18, 18, 18)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rentTotalLabel)
                     .addComponent(rentTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rentTotalLabel))
-                .addGap(32, 32, 32)
-                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(amountLabel)
-                    .addComponent(amountField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(changeNumButton))
+                    .addComponent(rentChangeButton))
                 .addGap(18, 18, 18)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(changeNumLabel)
-                    .addComponent(changeNumField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                    .addComponent(rentAmountLabel)
+                    .addComponent(rentAmountField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rentChangeLabel)
+                    .addComponent(rentChangeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(rentACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rentCarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(clearRentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(57, Short.MAX_VALUE))
+                    .addComponent(rentClearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
 
         mainPanel.addTab("Rent A Car", rentACarPanel);
@@ -326,7 +1091,7 @@ public class AlgoFrame extends javax.swing.JFrame {
 
         returnCarCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vios", "Avanza", "Corolla", "Innova", "Hilux", "Fortuner" }));
 
-        nameReturnLabel.setText("Name");
+        returnNameLabel.setText("Name");
 
         returnButton.setText("Return Car");
         returnButton.addActionListener(new java.awt.event.ActionListener() {
@@ -343,18 +1108,19 @@ public class AlgoFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(returnACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(returnACarPanelLayout.createSequentialGroup()
-                        .addComponent(returnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(returnNameLabel)
+                        .addGap(79, 79, 79)
+                        .addComponent(returnNameField))
                     .addGroup(returnACarPanelLayout.createSequentialGroup()
                         .addGroup(returnACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(returnModelLabel)
-                            .addComponent(nameReturnLabel))
-                        .addGap(82, 82, 82)
-                        .addGroup(returnACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(returnACarPanelLayout.createSequentialGroup()
-                                .addComponent(returnCarCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 309, Short.MAX_VALUE))
-                            .addComponent(returnNameField))))
+                                .addGap(111, 111, 111)
+                                .addComponent(returnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(returnACarPanelLayout.createSequentialGroup()
+                                .addComponent(returnModelLabel)
+                                .addGap(77, 77, 77)
+                                .addComponent(returnCarCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 460, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         returnACarPanelLayout.setVerticalGroup(
@@ -362,15 +1128,15 @@ public class AlgoFrame extends javax.swing.JFrame {
             .addGroup(returnACarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(returnACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameReturnLabel)
+                    .addComponent(returnNameLabel)
                     .addComponent(returnNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(returnACarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(returnModelLabel)
                     .addComponent(returnCarCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(21, 21, 21)
                 .addComponent(returnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(275, Short.MAX_VALUE))
+                .addContainerGap(269, Short.MAX_VALUE))
         );
 
         mainPanel.addTab("Return A Car", returnACarPanel);
@@ -396,7 +1162,7 @@ public class AlgoFrame extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(statusTable);
+        statusPane.setViewportView(statusTable);
 
         javax.swing.GroupLayout statusPanelLayout = new javax.swing.GroupLayout(statusPanel);
         statusPanel.setLayout(statusPanelLayout);
@@ -404,20 +1170,21 @@ public class AlgoFrame extends javax.swing.JFrame {
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE)
+                .addComponent(statusPane, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
                 .addContainerGap())
         );
         statusPanelLayout.setVerticalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(statusPane, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(245, Short.MAX_VALUE))
         );
 
         mainPanel.addTab("Status Panel", statusPanel);
 
-        titleHeader.setText("Algo Motors System");
+        titleHeader.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        titleHeader.setText("ALGO MOTORS SYSTEM");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -443,13 +1210,8 @@ public class AlgoFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     *
-     * EVENTS START
-     *
-     */
-    // -------------------------------------------
-    // RETURN BUTTON : OUTPUT RETURNED CAR
+    // ------------ EVENTS START ------------
+    // RETURN BUTTON : RETURN A CAR : OUTPUT RETURNED CAR
     private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
         try {
             // Check if nameReturnField is not blank
@@ -465,9 +1227,9 @@ public class AlgoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_returnButtonActionPerformed
 
     // CHANGE NUM BUTTON : RENT A CAR : OUTPUT CHANGE FROM AMOUNT
-    private void changeNumButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeNumButtonActionPerformed
+    private void rentChangeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentChangeButtonActionPerformed
         calculateChange();
-    }//GEN-LAST:event_changeNumButtonActionPerformed
+    }//GEN-LAST:event_rentChangeButtonActionPerformed
 
     // RENT TOTAL BUTTON : RENT A CAR : OUTPUT RENT
     private void rentTotalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentTotalButtonActionPerformed
@@ -475,14 +1237,14 @@ public class AlgoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_rentTotalButtonActionPerformed
 
     // DAYS RENT FIELD : RENT A CAR : INPUT HOW MANY DAYS TO RENT
-    private void daysRentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daysRentFieldActionPerformed
+    private void rentDaysFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentDaysFieldActionPerformed
         calculateRentTotal(); // part of calculateRentTotal()
-    }//GEN-LAST:event_daysRentFieldActionPerformed
+    }//GEN-LAST:event_rentDaysFieldActionPerformed
 
     // AMOUNT FIELD : RENT A CAR :  INPUT HOW MUCH TO PAY FOR
-    private void amountFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountFieldActionPerformed
+    private void rentAmountFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentAmountFieldActionPerformed
         calculateChange();
-    }//GEN-LAST:event_amountFieldActionPerformed
+    }//GEN-LAST:event_rentAmountFieldActionPerformed
 
     // RENT CAR BUTTON : RENT A CAR : OUTPUT THE RENT SUCCESS OUTPUT
     private void rentCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentCarButtonActionPerformed
@@ -490,13 +1252,13 @@ public class AlgoFrame extends javax.swing.JFrame {
         try {
 
             // Check if name is not blank
-            if (nameRentField.getText().trim().isEmpty()) {
+            if (rentNameField.getText().trim().isEmpty()) {
                 throw new InvalidRentException("Invalid. Check if blank or invalid format.");
             }
 
             // Check if daysRentField is neither blank, 0, nor invalid
             try {
-                int days = Integer.parseInt(daysRentField.getText());
+                int days = Integer.parseInt(rentDaysField.getText());
                 if (days <= 0) {
                     throw new InvalidRentException("Days must be greater than 0.");
                 }
@@ -506,7 +1268,7 @@ public class AlgoFrame extends javax.swing.JFrame {
 
             // Check if changeNumField is neither blank nor invalid
             try {
-                int change = Integer.parseInt(changeNumField.getText());
+                int change = Integer.parseInt(rentChangeField.getText());
             } catch (NumberFormatException e) {
                 throw new InvalidRentException("Invalid. Check if blank or invalid format.");
             }
@@ -516,30 +1278,22 @@ public class AlgoFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Invalid rent: The selected car is not available.", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_rentCarButtonActionPerformed
-    // RENT CAR BUTTON END
 
     // CAR COMBO BOX : RENT A CAR : SELECT CAR CHOICE
-    private void carComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carComboBoxActionPerformed
+    private void rentCarComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentCarComboActionPerformed
         updateRateNumField();
-    }//GEN-LAST:event_carComboBoxActionPerformed
+    }//GEN-LAST:event_rentCarComboActionPerformed
 
     // CLEAR RENT BUTTON : RENT A CAR : CLEAR INPUT DATA
-    private void clearRentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearRentButtonActionPerformed
+    private void rentClearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rentClearButtonActionPerformed
         clearRentFields();
-    }//GEN-LAST:event_clearRentButtonActionPerformed
+    }//GEN-LAST:event_rentClearButtonActionPerformed
 
-    /**
-     *
-     * EVENTS END
-     *
-     */
-    // ----------- FUNCTIONS -----------
-    /**
-     *
-     * GLOBAL START 
-     *
-     */
-    // GET RATE PER DAY : GETS APPROPRIATE RATE OF THE CARS
+    // ----------- EVENTS END ----------------
+    
+    // ----------- FUNCTIONS  START-----------
+
+    // GET RATE PER DAY : GLOBAL : GETS APPROPRIATE RATE OF THE CARS
     private int getRatePerDay(String selectedCar) {
         switch (selectedCar) {
             case "Vios":
@@ -559,7 +1313,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         }
     }
 
-    // GET CAR INDEX : GET INDEX OF CARS
+    // GET CAR INDEX : GLOBAL : GET INDEX OF CARS
     private int getCarIndex(String selectedCar) {
         switch (selectedCar) {
             case "Vios":
@@ -578,16 +1332,8 @@ public class AlgoFrame extends javax.swing.JFrame {
                 return -1;
         }
     }
-   /**
-     *
-     * GLOBAL END
-     *
-     */
-   /**
-     *
-     * STATUS TABLE START 
-     *
-     */
+
+    // UPDATE STATUS TABLE : STATUS TABLE : UPDATES TABLE VALUES
     private void updateStatusTable(String model, boolean isRented, String tenant) {
         int rowIndex = getCarRowIndex(model);
         statusTable.setValueAt(model, rowIndex, 0);
@@ -598,6 +1344,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         statusTable.setValueAt(tenant, rowIndex, 2);
     }
 
+    // GET CAR ROW INDEX : STATUS TABLE : RETURN INDEX OF CAR IN TABLE ROW
     private int getCarRowIndex(String model) {
         for (int i = 0; i < statusTable.getRowCount(); i++) {
             if (statusTable.getValueAt(i, 0).equals(model)) {
@@ -606,42 +1353,33 @@ public class AlgoFrame extends javax.swing.JFrame {
         }
         return -1;
     }
-    /**
-     *
-     * STATUS TABLE END 
-     *
-     */
-    /**
-     *
-     * RENT A CAR START
-     *
-     */
-    // CLEAR RENT BUTTON : CLEAR INPUT DATA FOR ALL FIELDS
+   
+    // CLEAR RENT BUTTON : RENT A CAR : CLEAR INPUT DATA FOR ALL FIELDS
     private void clearRentFields() {
-        nameRentField.setText(null);
-        daysRentField.setText(null);
-        amountField.setText(null);
+        rentNameField.setText(null);
+        rentDaysField.setText(null);
+        rentAmountField.setText(null);
         rentTotalField.setText(null);
-        changeNumField.setText(null);
+        rentChangeField.setText(null);
     }
 
-    // UPDATE RATE NUM FIELD : UPDATES FIELD FOR CAR RATE UPON SELECTION
+    // UPDATE RATE NUM FIELD : RENT A CAR : UPDATES FIELD FOR CAR RATE UPON SELECTION
     private void updateRateNumField() {
-        String selectedCar = (String) carComboBox.getSelectedItem();
+        String selectedCar = (String) rentCarCombo.getSelectedItem();
         int ratePerDay = getRatePerDay(selectedCar);
         rateNumField.setText(Integer.toString(ratePerDay));
     }
 
-    // CALCULATE RENT TOTAL : GET TOTAL RENT
+    // CALCULATE RENT TOTAL : RENT A CAR : GET TOTAL RENT
     private void calculateRentTotal() {
         try {
             // get days from daysRentField input
-            int days = Integer.parseInt(daysRentField.getText());
+            int days = Integer.parseInt(rentDaysField.getText());
 
             // if days are greater than 0
             if (days > 0) {
                 // set rate based on model
-                String selectedCar = (String) carComboBox.getSelectedItem();
+                String selectedCar = (String) rentCarCombo.getSelectedItem();
                 int ratePerDay = getRatePerDay(selectedCar);
 
                 // calculate total rent days multiplied by rent
@@ -657,32 +1395,32 @@ public class AlgoFrame extends javax.swing.JFrame {
         }
     }
 
-    // CALCULATE CHANGE : INPUT COMPLETE RENT
+    // CALCULATE CHANGE : RENT A CAR : INPUT COMPLETE RENT
     private void calculateChange() {
         try {
-            int amountPaid = Integer.parseInt(amountField.getText());
+            int amountPaid = Integer.parseInt(rentAmountField.getText());
             int totalRent = Integer.parseInt(rentTotalField.getText());
 
             if (amountPaid >= totalRent) {
                 int change = amountPaid - totalRent;
-                changeNumField.setText(Integer.toString(change));
+                rentChangeField.setText(Integer.toString(change));
             } else {
-                changeNumField.setText("Insufficient amount");
+                rentChangeField.setText("Insufficient amount");
             }
         } catch (NumberFormatException e) {
-            changeNumField.setText("Invalid format");
+            rentChangeField.setText("Invalid format");
         }
     }
 
-    // RENT CAR : INPUT COMPLETE RENT
+    // RENT CAR : RENT A CAR : INPUT COMPLETE RENT
     private void rentCar() throws InvalidRentException {
 
         // declare data inputs
-        String name = nameRentField.getText();
-        String selectedCar = (String) carComboBox.getSelectedItem();
-        int days = Integer.parseInt(daysRentField.getText());
+        String name = rentNameField.getText();
+        String selectedCar = (String) rentCarCombo.getSelectedItem();
+        int days = Integer.parseInt(rentDaysField.getText());
         int totalRent = Integer.parseInt(rentTotalField.getText());
-        int amountPaid = Integer.parseInt(amountField.getText());
+        int amountPaid = Integer.parseInt(rentAmountField.getText());
 
         // check if the selected car is available
         int carIndex = getCarIndex(selectedCar);
@@ -702,7 +1440,7 @@ public class AlgoFrame extends javax.swing.JFrame {
                     + "\nDays Rented: " + days
                     + "\nTotal Rent: " + totalRent
                     + "\nAmount Paid: " + amountPaid
-                    + "\nChange: " + changeNumField.getText(),
+                    + "\nChange: " + rentChangeField.getText(),
                     "Rent Successful", JOptionPane.INFORMATION_MESSAGE);
 
             // Write user inputs to a .txt file
@@ -716,7 +1454,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         updateStatusTable(selectedCar, true, name);
     }
 
-    // WRITE TO FILE : OUTPUTS RENT TO FILE
+    // WRITE TO FILE : RENT A CAR : OUTPUTS RENT TO FILE
     private void writeToFile(String name, String car, int days, int totalRent, int amountPaid) {
         try {
             File outputFile = new File(name + "_rent.txt");
@@ -735,17 +1473,8 @@ public class AlgoFrame extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
-   /**
-     *
-     * RENT A CAR END 
-     *
-     */
-   /**
-     *
-     * RETURN A CAR START 
-     *
-     */ 
-    // RETURN CAR : INPUT RETURN OPERATION
+
+    // RETURN CAR : RETURN A CAR : INPUT RETURN OPERATION
     private void returnCar() throws InvalidReturnException {
 
         // initialize variables
@@ -775,7 +1504,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         updateStatusTable(selectedCar, false, null);
     }
 
-    // WRITE RETURN TRANSACTION TO FILE ; OUTPUT RETURN RECIEPT
+    // WRITE RETURN TRANSACTION TO FILE : RETURN A CAR : OUTPUT RETURN RECIEPT
     private void writeReturnTransactionToFile(String name, String car) {
         try {
             File returnFile = new File(name + "_return.txt");
@@ -791,11 +1520,9 @@ public class AlgoFrame extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
-    /**
-     *
-     * RETURN A CAR END 
-     *
-     */
+    
+    // ----------- FUNCTIONS  END -----------
+ 
     
     public static void main(String[] args) {
         /* Create and display the form */
@@ -805,27 +1532,120 @@ public class AlgoFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JTextField amountField;
-    public javax.swing.JLabel amountLabel;
-    public javax.swing.JComboBox<String> carComboBox;
+    public javax.swing.JLabel avanzaEngineLabel;
+    public javax.swing.JLabel avanzaEngineValuesLabel;
+    public javax.swing.JLabel avanzaHeightLabel;
+    public javax.swing.JLabel avanzaHeightValuesLabel;
+    public javax.swing.JLabel avanzaHorsepowerLabel;
+    public javax.swing.JLabel avanzaHorsepowerValuesLabel;
+    public javax.swing.JLabel avanzaIMGLabel;
+    public javax.swing.JLabel avanzaLengthLabel;
+    public javax.swing.JLabel avanzaLengthValueslabel;
+    public javax.swing.JLabel avanzaSeatingCapLabel;
+    public javax.swing.JLabel avanzaSeatingCapValuesLabel;
+    public javax.swing.JLabel avanzaSpecsLabel;
+    public javax.swing.JLabel avanzaTorqueLabel;
+    public javax.swing.JLabel avanzaTorqueValuesLabel;
+    public javax.swing.JLabel avanzaTransmissionLabel;
+    public javax.swing.JLabel avanzaTransmissionValuesLabel;
+    public javax.swing.JLabel avanzaValuesLabel;
+    public javax.swing.JLabel avanzaWidthValuesLabel;
+    public javax.swing.JLabel avanzaWidthlabel;
     public javax.swing.JComboBox<String> carComboBox1;
-    public javax.swing.JButton changeNumButton;
-    public javax.swing.JTextField changeNumField;
-    public javax.swing.JLabel changeNumLabel;
-    public javax.swing.JButton clearRentButton;
-    public javax.swing.JTextField daysRentField;
-    public javax.swing.JLabel daysRentLabel;
-    private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JLabel corollaEngineLabel;
+    public javax.swing.JLabel corollaEngineValuesLabel;
+    public javax.swing.JLabel corollaHeightLabel;
+    public javax.swing.JLabel corollaHeightValuesLabel;
+    public javax.swing.JLabel corollaHorsepowerLabel;
+    public javax.swing.JLabel corollaHorsepowerValuesLabel;
+    public javax.swing.JLabel corollaIMGLabel;
+    public javax.swing.JLabel corollaLengthLabel;
+    public javax.swing.JLabel corollaLengthValuesLabel;
+    public javax.swing.JLabel corollaSeatingCapLabel;
+    public javax.swing.JLabel corollaSeatingCapValuesLabel;
+    public javax.swing.JLabel corollaSpecsLabel;
+    public javax.swing.JLabel corollaTorqueLabel;
+    public javax.swing.JLabel corollaTorqueValuesLabel;
+    public javax.swing.JLabel corollaTransmissionLabel;
+    public javax.swing.JLabel corollaTransmissionValuesLabel;
+    public javax.swing.JLabel corollaValuesLabel;
+    public javax.swing.JLabel corollaWidthLabel;
+    public javax.swing.JLabel corollaWidthValuesLabel;
+    public javax.swing.JLabel fortunerEngineLabel;
+    public javax.swing.JLabel fortunerEngineValuesLabel;
+    public javax.swing.JLabel fortunerHeightLabel;
+    public javax.swing.JLabel fortunerHeightValuesLabel;
+    public javax.swing.JLabel fortunerHorsepowerLabel;
+    public javax.swing.JLabel fortunerHorsepowerValuesLabel;
+    public javax.swing.JLabel fortunerIMGLabel;
+    public javax.swing.JLabel fortunerLengthLabel;
+    public javax.swing.JLabel fortunerLengthValuesLabel;
+    public javax.swing.JLabel fortunerSeatingCapLabel;
+    public javax.swing.JLabel fortunerSeatingCapValuesLabel;
+    public javax.swing.JLabel fortunerSpecsLabel;
+    public javax.swing.JLabel fortunerTorqueLabel;
+    public javax.swing.JLabel fortunerTorqueValuesLabel;
+    public javax.swing.JLabel fortunerTransmissionLabel;
+    public javax.swing.JLabel fortunerTransmissionValuesLabel;
+    public javax.swing.JLabel fortunerValuesLabel;
+    public javax.swing.JLabel fortunerWidthLabel;
+    public javax.swing.JLabel fortunerWidthValuesLabel;
+    public javax.swing.JLabel heightValuesLabel3;
+    public javax.swing.JLabel hiluxEngineLabel;
+    public javax.swing.JLabel hiluxEngineValuesLabel;
+    public javax.swing.JLabel hiluxHeightLabel;
+    public javax.swing.JLabel hiluxHeightValuesLabel;
+    public javax.swing.JLabel hiluxHorsepowerLabel;
+    public javax.swing.JLabel hiluxHorsepowerValuesLabel;
+    public javax.swing.JLabel hiluxIMGLabel;
+    public javax.swing.JLabel hiluxLengthLabel;
+    public javax.swing.JLabel hiluxLengthValuesLabel;
+    public javax.swing.JLabel hiluxSeatingCapLabel;
+    public javax.swing.JLabel hiluxSeatingCapValuesLabel;
+    public javax.swing.JLabel hiluxSpecsLabel;
+    public javax.swing.JLabel hiluxTorqueLabel;
+    public javax.swing.JLabel hiluxTorqueValuesLabel;
+    public javax.swing.JLabel hiluxTransmissionLabel;
+    public javax.swing.JLabel hiluxTransmissionValuesLabel;
+    public javax.swing.JLabel hiluxValuesLabel;
+    public javax.swing.JLabel hiluxWidthLabel;
+    public javax.swing.JLabel hiluxWidthValuesLabel;
+    public javax.swing.JLabel innovaEngineLabel;
+    public javax.swing.JLabel innovaEngineValuesLabel;
+    public javax.swing.JLabel innovaHeightLabel;
+    public javax.swing.JLabel innovaHorsepowerLabel3;
+    public javax.swing.JLabel innovaHorsepowerValuesLabel;
+    public javax.swing.JLabel innovaIMGLabel;
+    public javax.swing.JLabel innovaLengthLabel;
+    public javax.swing.JLabel innovaLengthValuesLabel;
+    public javax.swing.JLabel innovaSeatingCapLabel;
+    public javax.swing.JLabel innovaSeatingCapValuesLabel;
+    public javax.swing.JLabel innovaSpecsLabel;
+    public javax.swing.JLabel innovaTorqueLabel;
+    public javax.swing.JLabel innovaTorqueValuesLabel;
+    public javax.swing.JLabel innovaTransmissionLabel;
+    public javax.swing.JLabel innovaTransmissionValuesLabel;
+    public javax.swing.JLabel innovaValuesLabel;
+    public javax.swing.JLabel innovaWidthLabel;
+    public javax.swing.JLabel innovaWidthValuesLabel;
     public javax.swing.JTabbedPane mainPanel;
-    public javax.swing.JLabel modelRentLabel;
     public javax.swing.JLabel modelRentLabel1;
-    public javax.swing.JTextField nameRentField;
-    public javax.swing.JLabel nameRentLabel;
-    public javax.swing.JLabel nameReturnLabel;
     public javax.swing.JLabel rateHeaderLabel;
     public javax.swing.JTextField rateNumField;
     public javax.swing.JPanel rentACarPanel;
+    public javax.swing.JTextField rentAmountField;
+    public javax.swing.JLabel rentAmountLabel;
     public javax.swing.JButton rentCarButton;
+    public javax.swing.JComboBox<String> rentCarCombo;
+    public javax.swing.JButton rentChangeButton;
+    public javax.swing.JTextField rentChangeField;
+    public javax.swing.JLabel rentChangeLabel;
+    public javax.swing.JButton rentClearButton;
+    public javax.swing.JTextField rentDaysField;
+    public javax.swing.JLabel rentDaysLabel;
+    public javax.swing.JLabel rentModelLabel;
+    public javax.swing.JTextField rentNameField;
+    public javax.swing.JLabel rentNameLabel;
     public javax.swing.JButton rentTotalButton;
     public javax.swing.JTextField rentTotalField;
     public javax.swing.JLabel rentTotalLabel;
@@ -834,6 +1654,8 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JComboBox<String> returnCarCombo;
     public javax.swing.JLabel returnModelLabel;
     public javax.swing.JTextField returnNameField;
+    public javax.swing.JLabel returnNameLabel;
+    public javax.swing.JScrollPane statusPane;
     public javax.swing.JPanel statusPanel;
     public javax.swing.JTable statusTable;
     public javax.swing.JLabel titleHeader;
@@ -845,5 +1667,24 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JPanel viewNestedHiluxPanel;
     public javax.swing.JPanel viewNestedInnovaPanel;
     public javax.swing.JPanel viewNestedViosPanel;
+    public javax.swing.JLabel viosEngineLabel;
+    public javax.swing.JLabel viosEngineValuesLabel;
+    public javax.swing.JLabel viosHeightLabel;
+    public javax.swing.JLabel viosHeightValuesLabel;
+    public javax.swing.JLabel viosHorsepowerLabel;
+    public javax.swing.JLabel viosHorsepowerValuesLabel;
+    public javax.swing.JLabel viosIMGLabel;
+    public javax.swing.JLabel viosLengthLabel;
+    public javax.swing.JLabel viosLengthValuesLabel;
+    public javax.swing.JLabel viosSeatingCapLabel;
+    public javax.swing.JLabel viosSeatingCapValuesLabel;
+    public javax.swing.JLabel viosSpecsLabel;
+    public javax.swing.JLabel viosTorqueLabel;
+    public javax.swing.JLabel viosTorqueValuesLabel;
+    public javax.swing.JLabel viosTransmissionLabel;
+    public javax.swing.JLabel viosTransmissionValuesLabel;
+    public javax.swing.JLabel viosValuesLabel;
+    public javax.swing.JLabel viosVidthValuesLabel;
+    public javax.swing.JLabel viosWidthLabel;
     // End of variables declaration//GEN-END:variables
 }
