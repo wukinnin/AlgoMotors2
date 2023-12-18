@@ -26,8 +26,6 @@ public class AlgoFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        modelRentLabel1 = new javax.swing.JLabel();
-        carComboBox1 = new javax.swing.JComboBox<>();
         mainPanel = new javax.swing.JTabbedPane();
         viewCarPanel = new javax.swing.JPanel();
         viewNestedCarTab = new javax.swing.JTabbedPane();
@@ -180,10 +178,6 @@ public class AlgoFrame extends javax.swing.JFrame {
         statusPane = new javax.swing.JScrollPane();
         statusTable = new javax.swing.JTable();
         titleHeader = new javax.swing.JLabel();
-
-        modelRentLabel1.setText("Model");
-
-        carComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vios", "Avanza", "Corolla", "Innova", "Hilux", "Fortuner" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Algo Motors");
@@ -1290,9 +1284,7 @@ public class AlgoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_rentClearButtonActionPerformed
 
     // ----------- EVENTS END ----------------
-    
     // ----------- FUNCTIONS  START-----------
-
     // GET RATE PER DAY : GLOBAL : GETS APPROPRIATE RATE OF THE CARS
     private int getRatePerDay(String selectedCar) {
         switch (selectedCar) {
@@ -1353,7 +1345,7 @@ public class AlgoFrame extends javax.swing.JFrame {
         }
         return -1;
     }
-   
+
     // CLEAR RENT BUTTON : RENT A CAR : CLEAR INPUT DATA FOR ALL FIELDS
     private void clearRentFields() {
         rentNameField.setText(null);
@@ -1419,8 +1411,10 @@ public class AlgoFrame extends javax.swing.JFrame {
         String name = rentNameField.getText();
         String selectedCar = (String) rentCarCombo.getSelectedItem();
         int days = Integer.parseInt(rentDaysField.getText());
+        int rateNum = Integer.parseInt(rateNumField.getText());
         int totalRent = Integer.parseInt(rentTotalField.getText());
         int amountPaid = Integer.parseInt(rentAmountField.getText());
+        int change = Integer.parseInt(rentChangeField.getText());
 
         // check if the selected car is available
         int carIndex = getCarIndex(selectedCar);
@@ -1435,16 +1429,17 @@ public class AlgoFrame extends javax.swing.JFrame {
                     "Rent successful!"
                     + "\nReciept is printed to file!"
                     + "\n"
-                    + "\nName: " + name
-                    + "\nCar: " + selectedCar
-                    + "\nDays Rented: " + days
-                    + "\nTotal Rent: " + totalRent
-                    + "\nAmount Paid: " + amountPaid
-                    + "\nChange: " + rentChangeField.getText(),
+                    + "\nName : " + name
+                    + "\nModel : " + selectedCar
+                    + "\nRate per day : " + rateNum
+                    + "\nDay/s to Rent : " + days
+                    + "\nRent Total : " + totalRent
+                    + "\nAmount : " + amountPaid
+                    + "\nChange Tendered : " + change,
                     "Rent Successful", JOptionPane.INFORMATION_MESSAGE);
 
             // Write user inputs to a .txt file
-            writeToFile(name, selectedCar, days, totalRent, amountPaid);
+            writeToFile(name, selectedCar, days, rateNum, totalRent, amountPaid, change);
         } else {
             // Display a message if the selected car is not available
             throw new InvalidRentException("Sorry, the selected car is not available.");
@@ -1455,18 +1450,20 @@ public class AlgoFrame extends javax.swing.JFrame {
     }
 
     // WRITE TO FILE : RENT A CAR : OUTPUTS RENT TO FILE
-    private void writeToFile(String name, String car, int days, int totalRent, int amountPaid) {
+    private void writeToFile(String name, String car, int days, int rateNum, int totalRent, int amountPaid, int change) {
         try {
-            File outputFile = new File(name + "_rent.txt");
+            File outputFile = new File(name + "_rent-reciept.txt");
             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile, true));
 
             // Append user inputs to the file
-            writer.write("----- RENT TRANSACTION -----\n");
-            writer.write("Name: " + name + "\n");
-            writer.write("Car: " + car + "\n");
-            writer.write("Days Rented " + days + "\n");
-            writer.write("Total Rent: " + totalRent + "\n");
-            writer.write("Amount Paid: " + amountPaid + "\n\n");
+            writer.write("----- RENT RECIEPT -----\n");
+            writer.write("Name : " + name + "\n");
+            writer.write("Model : " + car + "\n");
+            writer.write("Rate per day : " + rateNum + "\n");
+            writer.write("Day/s Rented : " + days + "\n");
+            writer.write("Rent Total : " + totalRent + "\n");
+            writer.write("Amount : " + amountPaid + "\n");
+            writer.write("Change Tendered : " + change + "\n\n");
             writer.close();
 
         } catch (IOException e) { // in the event such exceptions can occur
@@ -1491,8 +1488,8 @@ public class AlgoFrame extends javax.swing.JFrame {
                     "Return successful!"
                     + "\nReciept is printed to file!"
                     + "\n"
-                    + "\nName: " + name
-                    + "\nCar: " + selectedCar,
+                    + "\nName : " + name
+                    + "\nModel : " + selectedCar,
                     "Return Successful", JOptionPane.INFORMATION_MESSAGE);
             // Write return transaction to a file
             writeReturnTransactionToFile(name, selectedCar);
@@ -1507,23 +1504,20 @@ public class AlgoFrame extends javax.swing.JFrame {
     // WRITE RETURN TRANSACTION TO FILE : RETURN A CAR : OUTPUT RETURN RECIEPT
     private void writeReturnTransactionToFile(String name, String car) {
         try {
-            File returnFile = new File(name + "_return.txt");
+            File returnFile = new File(name + "_return-reciept.txt");
             BufferedWriter writer = new BufferedWriter(new FileWriter(returnFile, true));
 
             // Append return transaction details to the file
-            writer.write("----- RENT TRANSACTION -----\n");
-            writer.write("Name: " + name + "\n");
-            writer.write("Car: " + car + "\n\n");
-
+            writer.write("----- RETURN RECIEPT -----\n");
+            writer.write("Name : " + name + "\n");
+            writer.write("Model : " + car + "\n\n");
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    
+
     // ----------- FUNCTIONS  END -----------
- 
-    
     public static void main(String[] args) {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
@@ -1551,7 +1545,6 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JLabel avanzaValuesLabel;
     public javax.swing.JLabel avanzaWidthValuesLabel;
     public javax.swing.JLabel avanzaWidthlabel;
-    public javax.swing.JComboBox<String> carComboBox1;
     public javax.swing.JLabel corollaEngineLabel;
     public javax.swing.JLabel corollaEngineValuesLabel;
     public javax.swing.JLabel corollaHeightLabel;
@@ -1629,7 +1622,6 @@ public class AlgoFrame extends javax.swing.JFrame {
     public javax.swing.JLabel innovaWidthLabel;
     public javax.swing.JLabel innovaWidthValuesLabel;
     public javax.swing.JTabbedPane mainPanel;
-    public javax.swing.JLabel modelRentLabel1;
     public javax.swing.JLabel rateHeaderLabel;
     public javax.swing.JTextField rateNumField;
     public javax.swing.JPanel rentACarPanel;
